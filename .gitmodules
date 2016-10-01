@@ -1,0 +1,12 @@
+[submodule "Carthage/Checkouts/couchbase-lite-ios"]
+	path = Carthage/Checkouts/couchbase-lite-ios
+	url = https://github.com/couchbase/couchbase-lite-ios.git
+[submodule "Carthage/Checkouts/expecta"]
+	path = Carthage/Checkouts/expecta
+	url = https://github.com/specta/expecta.git
+[submodule "Carthage/Checkouts/ocmock"]
+	path = Carthage/Checkouts/ocmock
+	url = https://github.com/erikdoe/ocmock.git
+[submodule "Carthage/Checkouts/specta"]
+	path = Carthage/Checkouts/specta
+	url = https://github.com/specta/specta.git
