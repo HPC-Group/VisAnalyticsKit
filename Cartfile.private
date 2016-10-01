@@ -1,0 +1,4 @@
+github "specta/specta" ~> 1.0
+github "specta/expecta" "master"
+github "erikdoe/ocmock"
+github "couchbase/couchbase-lite-ios" "release/1.2.1"

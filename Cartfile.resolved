@@ -1,0 +1,4 @@
+github "couchbase/couchbase-lite-ios" "9e635d3a82ff6d398512d0c653a45bab051c9129"
+github "specta/expecta" "7c048e9af9c50cf8782e55abf57a9f4a48d8db1a"
+github "erikdoe/ocmock" "v3.3.1"
+github "specta/specta" "v1.0.5"

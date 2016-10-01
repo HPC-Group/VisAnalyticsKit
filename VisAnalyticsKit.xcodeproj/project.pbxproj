@@ -1,0 +1,2173 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0F0149101D93105F00FA60FF /* VisAnalyticsKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F0149051D93105E00FA60FF /* VisAnalyticsKit.framework */; };
+		0F014A111D93108B00FA60FF /* Aspects.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F0149201D93108B00FA60FF /* Aspects.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0F014A121D93108B00FA60FF /* Aspects.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F0149211D93108B00FA60FF /* Aspects.m */; };
+		0F014A131D93108B00FA60FF /* VAKSession.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F0149241D93108B00FA60FF /* VAKSession.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0F014A141D93108B00FA60FF /* VAKSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F0149251D93108B00FA60FF /* VAKSession.m */; };
+		0F014A151D93108B00FA60FF /* VAKState.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F0149261D93108B00FA60FF /* VAKState.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0F014A161D93108B00FA60FF /* VAKState.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F0149271D93108B00FA60FF /* VAKState.m */; };
+		0F014A171D93108B00FA60FF /* VAKStateFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F0149281D93108B00FA60FF /* VAKStateFactory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0F014A181D93108B00FA60FF /* VAKStateFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F0149291D93108B00FA60FF /* VAKStateFactory.m */; };
+		0F014A191D93108B00FA60FF /* VAKStateFactoryProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F01492A1D93108B00FA60FF /* VAKStateFactoryProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0F014A1A1D93108B00FA60FF /* VAKStateProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F01492B1D93108B00FA60FF /* VAKStateProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0F014A1B1D93108B00FA60FF /* VAKTouch.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F01492D1D93108B00FA60FF /* VAKTouch.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0F014A1C1D93108B00FA60FF /* VAKTouch.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F01492E1D93108B00FA60FF /* VAKTouch.m */; };
+		0F014A1D1D93108B00FA60FF /* VAKTouchCollection.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F01492F1D93108B00FA60FF /* VAKTouchCollection.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0F014A1E1D93108B00FA60FF /* VAKTouchCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F0149301D93108B00FA60FF /* VAKTouchCollection.m */; };
+		0F014A1F1D93108B00FA60FF /* VAKAbstractModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F0149311D93108B00FA60FF /* VAKAbstractModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0F014A201D93108B00FA60FF /* VAKAbstractModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F0149321D93108B00FA60FF /* VAKAbstractModel.m */; };
+		0F014A211D93108B00FA60FF /* VAKPersistableProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F0149331D93108B00FA60FF /* VAKPersistableProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0F014A221D93108B00FA60FF /* VAKTaggableProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F0149341D93108B00FA60FF /* VAKTaggableProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0F014A231D93108B00FA60FF /* VAKTransformableProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F0149351D93108B00FA60FF /* VAKTransformableProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0F014A241D93108B00FA60FF /* NSDate+VAKISOFormat.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F0149371D93108B00FA60FF /* NSDate+VAKISOFormat.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0F014A251D93108B00FA60FF /* NSDate+VAKISOFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F0149381D93108B00FA60FF /* NSDate+VAKISOFormat.m */; };
+		0F014A261D93108B00FA60FF /* NSObject+VAKAspect.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F0149391D93108B00FA60FF /* NSObject+VAKAspect.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0F014A271D93108B00FA60FF /* NSObject+VAKAspect.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F01493A1D93108B00FA60FF /* NSObject+VAKAspect.m */; };
+		0F014A281D93108B00FA60FF /* NSObject+VAKShortId.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F01493B1D93108B00FA60FF /* NSObject+VAKShortId.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0F014A291D93108B00FA60FF /* NSObject+VAKShortId.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F01493C1D93108B00FA60FF /* NSObject+VAKShortId.m */; };
+		0F014A2A1D93108B00FA60FF /* NSString+ReadableLevel.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F01493D1D93108B00FA60FF /* NSString+ReadableLevel.h */; };
+		0F014A2B1D93108B00FA60FF /* NSString+ReadableLevel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F01493E1D93108B00FA60FF /* NSString+ReadableLevel.m */; };
+		0F014A2C1D93108B00FA60FF /* UITouch+VAKTransformable.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F01493F1D93108B00FA60FF /* UITouch+VAKTransformable.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0F014A2D1D93108B00FA60FF /* UITouch+VAKTransformable.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F0149401D93108B00FA60FF /* UITouch+VAKTransformable.m */; };
+		0F014A2E1D93108B00FA60FF /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F0149441D93108B00FA60FF /* back.png */; };
+		0F014A2F1D93108B00FA60FF /* back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F0149451D93108B00FA60FF /* back@2x.png */; };
+		0F014A301D93108B00FA60FF /* back@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F0149461D93108B00FA60FF /* back@3x.png */; };
+		0F014A311D93108B00FA60FF /* close-dark.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F0149471D93108B00FA60FF /* close-dark.png */; };
+		0F014A321D93108B00FA60FF /* close-dark@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F0149481D93108B00FA60FF /* close-dark@2x.png */; };
+		0F014A331D93108B00FA60FF /* close-dark@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F0149491D93108B00FA60FF /* close-dark@3x.png */; };
+		0F014A341D93108B00FA60FF /* close-light.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F01494A1D93108B00FA60FF /* close-light.png */; };
+		0F014A351D93108B00FA60FF /* close-light@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F01494B1D93108B00FA60FF /* close-light@2x.png */; };
+		0F014A361D93108B00FA60FF /* close-light@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F01494C1D93108B00FA60FF /* close-light@3x.png */; };
+		0F014A371D93108B00FA60FF /* pause.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F01494E1D93108B00FA60FF /* pause.png */; };
+		0F014A381D93108B00FA60FF /* pause@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F01494F1D93108B00FA60FF /* pause@2x.png */; };
+		0F014A391D93108B00FA60FF /* pause@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F0149501D93108B00FA60FF /* pause@3x.png */; };
+		0F014A3A1D93108B00FA60FF /* play.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F0149511D93108B00FA60FF /* play.png */; };
+		0F014A3B1D93108B00FA60FF /* play@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F0149521D93108B00FA60FF /* play@2x.png */; };
+		0F014A3C1D93108B00FA60FF /* play@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F0149531D93108B00FA60FF /* play@3x.png */; };
+		0F014A3D1D93108B00FA60FF /* header.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F0149551D93108B00FA60FF /* header.png */; };
+		0F014A3E1D93108B00FA60FF /* header@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F0149561D93108B00FA60FF /* header@2x.png */; };
+		0F014A3F1D93108B00FA60FF /* header@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F0149571D93108B00FA60FF /* header@3x.png */; };
+		0F014A401D93108B00FA60FF /* hr.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F0149581D93108B00FA60FF /* hr.png */; };
+		0F014A411D93108B00FA60FF /* hr@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F0149591D93108B00FA60FF /* hr@2x.png */; };
+		0F014A421D93108B00FA60FF /* hr@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F01495A1D93108B00FA60FF /* hr@3x.png */; };
+		0F014A431D93108B00FA60FF /* couchbase-lite.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F01495C1D93108B00FA60FF /* couchbase-lite.png */; };
+		0F014A441D93108B00FA60FF /* couchbase-lite@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F01495D1D93108B00FA60FF /* couchbase-lite@2x.png */; };
+		0F014A451D93108B00FA60FF /* couchbase-lite@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F01495E1D93108B00FA60FF /* couchbase-lite@3x.png */; };
+		0F014A461D93108B00FA60FF /* json.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F01495F1D93108B00FA60FF /* json.png */; };
+		0F014A471D93108B00FA60FF /* json@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F0149601D93108B00FA60FF /* json@2x.png */; };
+		0F014A481D93108B00FA60FF /* json@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F0149611D93108B00FA60FF /* json@3x.png */; };
+		0F014A491D93108B00FA60FF /* VAKBackend.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F0149641D93108B00FA60FF /* VAKBackend.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0F014A4A1D93108B00FA60FF /* VAKBackend.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F0149651D93108B00FA60FF /* VAKBackend.m */; };
+		0F014A4B1D93108B00FA60FF /* VAKBackendProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F0149661D93108B00FA60FF /* VAKBackendProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0F014A4C1D93108B00FA60FF /* VAKCustomBackend.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F0149671D93108B00FA60FF /* VAKCustomBackend.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0F014A4D1D93108B00FA60FF /* VAKCustomBackend.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F0149681D93108B00FA60FF /* VAKCustomBackend.m */; };
+		0F014A4E1D93108B00FA60FF /* VAKDefaultBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F01496A1D93108B00FA60FF /* VAKDefaultBuilder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0F014A4F1D93108B00FA60FF /* VAKDefaultBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F01496B1D93108B00FA60FF /* VAKDefaultBuilder.m */; };
+		0F014A501D93108B00FA60FF /* VAKLogManagerBuilderProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F01496C1D93108B00FA60FF /* VAKLogManagerBuilderProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0F014A511D93108B00FA60FF /* VAKAppSupportFilesystemHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F01496F1D93108B00FA60FF /* VAKAppSupportFilesystemHelper.h */; };
+		0F014A521D93108B00FA60FF /* VAKAppSupportFilesystemHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F0149701D93108B00FA60FF /* VAKAppSupportFilesystemHelper.m */; };
+		0F014A531D93108B00FA60FF /* VAKFilesystemHelperBase.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F0149711D93108B00FA60FF /* VAKFilesystemHelperBase.h */; };
+		0F014A541D93108B00FA60FF /* VAKFilesystemHelperBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F0149721D93108B00FA60FF /* VAKFilesystemHelperBase.m */; };
+		0F014A551D93108B00FA60FF /* VAKLibraryFilesystemHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F0149731D93108B00FA60FF /* VAKLibraryFilesystemHelper.h */; };
+		0F014A561D93108B00FA60FF /* VAKLibraryFilesystemHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F0149741D93108B00FA60FF /* VAKLibraryFilesystemHelper.m */; };
+		0F014A571D93108B00FA60FF /* VAKAppSupportFileReader.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F0149761D93108B00FA60FF /* VAKAppSupportFileReader.h */; };
+		0F014A581D93108B00FA60FF /* VAKAppSupportFileReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F0149771D93108B00FA60FF /* VAKAppSupportFileReader.m */; };
+		0F014A591D93108B00FA60FF /* VAKFileReaderProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F0149781D93108B00FA60FF /* VAKFileReaderProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0F014A5A1D93108B00FA60FF /* VAKAppSupportFileWriter.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F01497A1D93108B00FA60FF /* VAKAppSupportFileWriter.h */; };
+		0F014A5B1D93108B00FA60FF /* VAKAppSupportFileWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F01497B1D93108B00FA60FF /* VAKAppSupportFileWriter.m */; };
+		0F014A5C1D93108B00FA60FF /* VAKFileWriterBase.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F01497C1D93108B00FA60FF /* VAKFileWriterBase.h */; };
+		0F014A5D1D93108B00FA60FF /* VAKFileWriterBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F01497D1D93108B00FA60FF /* VAKFileWriterBase.m */; };
+		0F014A5E1D93108B00FA60FF /* VAKFileWriterConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F01497E1D93108B00FA60FF /* VAKFileWriterConstants.h */; };
+		0F014A5F1D93108B00FA60FF /* VAKFileWriterProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F01497F1D93108B00FA60FF /* VAKFileWriterProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0F014A601D93108B00FA60FF /* VAKLibraryFileWriter.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F0149801D93108B00FA60FF /* VAKLibraryFileWriter.h */; };
+		0F014A611D93108B00FA60FF /* VAKLibraryFileWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F0149811D93108B00FA60FF /* VAKLibraryFileWriter.m */; };
+		0F014A621D93108B00FA60FF /* VAKDefaultFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F0149831D93108B00FA60FF /* VAKDefaultFormatter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0F014A631D93108B00FA60FF /* VAKDefaultFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F0149841D93108B00FA60FF /* VAKDefaultFormatter.m */; };
+		0F014A641D93108B00FA60FF /* VAKFormatterProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F0149851D93108B00FA60FF /* VAKFormatterProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0F014A651D93108B00FA60FF /* VAKMatrixFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F0149861D93108B00FA60FF /* VAKMatrixFormatter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0F014A661D93108B00FA60FF /* VAKMatrixFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F0149871D93108B00FA60FF /* VAKMatrixFormatter.m */; };
+		0F014A671D93108B00FA60FF /* VAKVectorFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F0149881D93108B00FA60FF /* VAKVectorFormatter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0F014A681D93108B00FA60FF /* VAKVectorFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F0149891D93108B00FA60FF /* VAKVectorFormatter.m */; };
+		0F014A691D93108B00FA60FF /* VAKAliasGenerator.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F01498B1D93108B00FA60FF /* VAKAliasGenerator.h */; };
+		0F014A6A1D93108B00FA60FF /* VAKAliasGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F01498C1D93108B00FA60FF /* VAKAliasGenerator.m */; };
+		0F014A6B1D93108B00FA60FF /* VAKKeyChain.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F01498E1D93108B00FA60FF /* VAKKeyChain.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0F014A6C1D93108B00FA60FF /* VAKKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F01498F1D93108B00FA60FF /* VAKKeychain.m */; };
+		0F014A6D1D93108B00FA60FF /* VAKLogManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F0149911D93108B00FA60FF /* VAKLogManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0F014A6E1D93108B00FA60FF /* VAKLogManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F0149921D93108B00FA60FF /* VAKLogManager.m */; };
+		0F014A6F1D93108B00FA60FF /* VAKLogRegistrationBroker.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F0149931D93108B00FA60FF /* VAKLogRegistrationBroker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0F014A701D93108B00FA60FF /* VAKLogRegistrationBroker.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F0149941D93108B00FA60FF /* VAKLogRegistrationBroker.m */; };
+		0F014A711D93108B00FA60FF /* VAKNoopDispatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F0149961D93108B00FA60FF /* VAKNoopDispatcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0F014A721D93108B00FA60FF /* VAKNoopDispatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F0149971D93108B00FA60FF /* VAKNoopDispatcher.m */; };
+		0F014A731D93108B00FA60FF /* VAKRemoteDispatchProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F0149981D93108B00FA60FF /* VAKRemoteDispatchProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0F014A741D93108B00FA60FF /* VAKConsoleProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F01499B1D93108B00FA60FF /* VAKConsoleProvider.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0F014A751D93108B00FA60FF /* VAKConsoleProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F01499C1D93108B00FA60FF /* VAKConsoleProvider.m */; };
+		0F014A761D93108B00FA60FF /* VAKNSLogProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F01499D1D93108B00FA60FF /* VAKNSLogProvider.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0F014A771D93108B00FA60FF /* VAKNSLogProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F01499E1D93108B00FA60FF /* VAKNSLogProvider.m */; };
+		0F014A781D93108B00FA60FF /* VAKJsonFileProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F0149A01D93108B00FA60FF /* VAKJsonFileProvider.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0F014A791D93108B00FA60FF /* VAKJsonFileProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F0149A11D93108B00FA60FF /* VAKJsonFileProvider.m */; };
+		0F014A7A1D93108B00FA60FF /* VAKJsonProviderProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F0149A21D93108B00FA60FF /* VAKJsonProviderProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0F014A7B1D93108B00FA60FF /* VAKFileProviderProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F0149A31D93108B00FA60FF /* VAKFileProviderProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0F014A7C1D93108B00FA60FF /* VAKPersistenceProviderProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F0149A41D93108B00FA60FF /* VAKPersistenceProviderProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0F014A7D1D93108B00FA60FF /* VAKSerializableProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F0149A61D93108B00FA60FF /* VAKSerializableProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0F014A7E1D93108B00FA60FF /* VAKProvFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F0149A91D93108B00FA60FF /* VAKProvFactory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0F014A7F1D93108B00FA60FF /* VAKProvFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F0149AA1D93108B00FA60FF /* VAKProvFactory.m */; };
+		0F014A801D93108B00FA60FF /* VAKProvSessionFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F0149AB1D93108B00FA60FF /* VAKProvSessionFactory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0F014A811D93108B00FA60FF /* VAKProvSessionFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F0149AC1D93108B00FA60FF /* VAKProvSessionFactory.m */; };
+		0F014A821D93108B00FA60FF /* VAKProvStateFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F0149AD1D93108B00FA60FF /* VAKProvStateFactory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0F014A831D93108B00FA60FF /* VAKProvStateFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F0149AE1D93108B00FA60FF /* VAKProvStateFactory.m */; };
+		0F014A841D93108B00FA60FF /* VAKProvAssociation.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F0149B01D93108B00FA60FF /* VAKProvAssociation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0F014A851D93108B00FA60FF /* VAKProvAssociation.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F0149B11D93108B00FA60FF /* VAKProvAssociation.m */; };
+		0F014A861D93108B00FA60FF /* VAKProvAttribution.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F0149B21D93108B00FA60FF /* VAKProvAttribution.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0F014A871D93108B00FA60FF /* VAKProvAttribution.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F0149B31D93108B00FA60FF /* VAKProvAttribution.m */; };
+		0F014A881D93108B00FA60FF /* VAKProvDelegation.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F0149B41D93108B00FA60FF /* VAKProvDelegation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0F014A891D93108B00FA60FF /* VAKProvDelegation.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F0149B51D93108B00FA60FF /* VAKProvDelegation.m */; };
+		0F014A8A1D93108B00FA60FF /* VAKProvDerivation.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F0149B61D93108B00FA60FF /* VAKProvDerivation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0F014A8B1D93108B00FA60FF /* VAKProvDerivation.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F0149B71D93108B00FA60FF /* VAKProvDerivation.m */; };
+		0F014A8C1D93108B00FA60FF /* VAKProvGeneration.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F0149B81D93108B00FA60FF /* VAKProvGeneration.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0F014A8D1D93108B00FA60FF /* VAKProvGeneration.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F0149B91D93108B00FA60FF /* VAKProvGeneration.m */; };
+		0F014A8E1D93108B00FA60FF /* VAKProvRevision.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F0149BA1D93108B00FA60FF /* VAKProvRevision.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0F014A8F1D93108B00FA60FF /* VAKProvRevision.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F0149BB1D93108B00FA60FF /* VAKProvRevision.m */; };
+		0F014A901D93108B00FA60FF /* VAKProvUsage.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F0149BC1D93108B00FA60FF /* VAKProvUsage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0F014A911D93108B00FA60FF /* VAKProvUsage.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F0149BD1D93108B00FA60FF /* VAKProvUsage.m */; };
+		0F014A921D93108B00FA60FF /* VAKProvActivity.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F0149BF1D93108B00FA60FF /* VAKProvActivity.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0F014A931D93108B00FA60FF /* VAKProvActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F0149C01D93108B00FA60FF /* VAKProvActivity.m */; };
+		0F014A941D93108B00FA60FF /* VAKProvDelegatingSoftwareAgent.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F0149C11D93108B00FA60FF /* VAKProvDelegatingSoftwareAgent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0F014A951D93108B00FA60FF /* VAKProvDelegatingSoftwareAgent.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F0149C21D93108B00FA60FF /* VAKProvDelegatingSoftwareAgent.m */; };
+		0F014A961D93108B00FA60FF /* VAKProvEntity.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F0149C31D93108B00FA60FF /* VAKProvEntity.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0F014A971D93108B00FA60FF /* VAKProvEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F0149C41D93108B00FA60FF /* VAKProvEntity.m */; };
+		0F014A981D93108B00FA60FF /* VAKProvWritingSoftwareAgent.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F0149C51D93108B00FA60FF /* VAKProvWritingSoftwareAgent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0F014A991D93108B00FA60FF /* VAKProvWritingSoftwareAgent.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F0149C61D93108B00FA60FF /* VAKProvWritingSoftwareAgent.m */; };
+		0F014A9A1D93108B00FA60FF /* VAKProvKeys.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F0149C81D93108B00FA60FF /* VAKProvKeys.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0F014A9B1D93108B00FA60FF /* VAKProvKeys.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F0149C91D93108B00FA60FF /* VAKProvKeys.m */; };
+		0F014A9C1D93108B00FA60FF /* VAKProv.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F0149CA1D93108B00FA60FF /* VAKProv.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0F014A9D1D93108B00FA60FF /* VAKProv.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F0149CB1D93108B00FA60FF /* VAKProv.m */; };
+		0F014A9E1D93108B00FA60FF /* VAKProvBase.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F0149CC1D93108B00FA60FF /* VAKProvBase.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0F014A9F1D93108B00FA60FF /* VAKProvBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F0149CD1D93108B00FA60FF /* VAKProvBase.m */; };
+		0F014AA01D93108B00FA60FF /* VAKProvType.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F0149CE1D93108B00FA60FF /* VAKProvType.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0F014AA11D93108B00FA60FF /* VAKProvType.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F0149CF1D93108B00FA60FF /* VAKProvType.m */; };
+		0F014AA21D93108B00FA60FF /* VAKScreenInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F0149D11D93108B00FA60FF /* VAKScreenInfo.h */; };
+		0F014AA31D93108B00FA60FF /* VAKScreenInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F0149D21D93108B00FA60FF /* VAKScreenInfo.m */; };
+		0F014AA41D93108B00FA60FF /* VAKReplayViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F0149D61D93108B00FA60FF /* VAKReplayViewController.h */; };
+		0F014AA51D93108B00FA60FF /* VAKReplayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F0149D71D93108B00FA60FF /* VAKReplayViewController.m */; };
+		0F014AA61D93108B00FA60FF /* VAKSessionSelectionViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F0149D91D93108B00FA60FF /* VAKSessionSelectionViewController.h */; };
+		0F014AA71D93108B00FA60FF /* VAKSessionSelectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F0149DA1D93108B00FA60FF /* VAKSessionSelectionViewController.m */; };
+		0F014AA81D93108B00FA60FF /* VAKSessionViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F0149DB1D93108B00FA60FF /* VAKSessionViewCell.h */; };
+		0F014AA91D93108B00FA60FF /* VAKSessionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F0149DC1D93108B00FA60FF /* VAKSessionViewCell.m */; };
+		0F014AAA1D93108B00FA60FF /* VAKSourceSelectionViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F0149DE1D93108B00FA60FF /* VAKSourceSelectionViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0F014AAB1D93108B00FA60FF /* VAKSourceSelectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F0149DF1D93108B00FA60FF /* VAKSourceSelectionViewController.m */; };
+		0F014AAC1D93108B00FA60FF /* VAKSourceViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F0149E01D93108B00FA60FF /* VAKSourceViewCell.h */; };
+		0F014AAD1D93108B00FA60FF /* VAKSourceViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F0149E11D93108B00FA60FF /* VAKSourceViewCell.m */; };
+		0F014AAE1D93108B00FA60FF /* VAKBaseSelectionViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F0149E21D93108B00FA60FF /* VAKBaseSelectionViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0F014AAF1D93108B00FA60FF /* VAKBaseSelectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F0149E31D93108B00FA60FF /* VAKBaseSelectionViewController.m */; };
+		0F014AB01D93108B00FA60FF /* VAKBaseReplayView.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F0149E51D93108B00FA60FF /* VAKBaseReplayView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0F014AB11D93108B00FA60FF /* VAKBaseReplayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F0149E61D93108B00FA60FF /* VAKBaseReplayView.m */; };
+		0F014AB21D93108B00FA60FF /* VAKReplayHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F0149E71D93108B00FA60FF /* VAKReplayHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0F014AB31D93108B00FA60FF /* VAKReplayHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F0149E81D93108B00FA60FF /* VAKReplayHeader.m */; };
+		0F014AB41D93108B00FA60FF /* VAKReplayPlayerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F0149E91D93108B00FA60FF /* VAKReplayPlayerView.h */; };
+		0F014AB51D93108B00FA60FF /* VAKReplayPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F0149EA1D93108B00FA60FF /* VAKReplayPlayerView.m */; };
+		0F014AB61D93108B00FA60FF /* VAKReplayViewHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F0149EB1D93108B00FA60FF /* VAKReplayViewHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0F014AB71D93108B00FA60FF /* VAKDurationCalculator.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F0149ED1D93108B00FA60FF /* VAKDurationCalculator.h */; };
+		0F014AB81D93108B00FA60FF /* VAKDurationCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F0149EE1D93108B00FA60FF /* VAKDurationCalculator.m */; };
+		0F014AB91D93108B00FA60FF /* VAKReplayTagHandlerProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F0149F01D93108B00FA60FF /* VAKReplayTagHandlerProtocol.h */; };
+		0F014ABA1D93108B00FA60FF /* VAKReplayTouchTagHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F0149F11D93108B00FA60FF /* VAKReplayTouchTagHandler.h */; };
+		0F014ABB1D93108B00FA60FF /* VAKReplayTouchTagHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F0149F21D93108B00FA60FF /* VAKReplayTouchTagHandler.m */; };
+		0F014ABC1D93108B00FA60FF /* VAKReplayViewTagHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F0149F31D93108B00FA60FF /* VAKReplayViewTagHandler.h */; };
+		0F014ABD1D93108B00FA60FF /* VAKReplayViewTagHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F0149F41D93108B00FA60FF /* VAKReplayViewTagHandler.m */; };
+		0F014ABE1D93108B00FA60FF /* VAKStateBaseSelection.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F0149F71D93108B00FA60FF /* VAKStateBaseSelection.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0F014ABF1D93108B00FA60FF /* VAKStateBaseSelection.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F0149F81D93108B00FA60FF /* VAKStateBaseSelection.m */; };
+		0F014AC01D93108B00FA60FF /* VAKStateControllerSelection.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F0149F91D93108B00FA60FF /* VAKStateControllerSelection.h */; };
+		0F014AC11D93108B00FA60FF /* VAKStateControllerSelection.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F0149FA1D93108B00FA60FF /* VAKStateControllerSelection.m */; };
+		0F014AC21D93108B00FA60FF /* VAKStateCustomSelection.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F0149FB1D93108B00FA60FF /* VAKStateCustomSelection.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0F014AC31D93108B00FA60FF /* VAKStateCustomSelection.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F0149FC1D93108B00FA60FF /* VAKStateCustomSelection.m */; };
+		0F014AC41D93108B00FA60FF /* VAKStateDoneSelection.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F0149FD1D93108B00FA60FF /* VAKStateDoneSelection.h */; };
+		0F014AC51D93108B00FA60FF /* VAKStateDoneSelection.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F0149FE1D93108B00FA60FF /* VAKStateDoneSelection.m */; };
+		0F014AC61D93108B00FA60FF /* VAKStateKeyframeSelection.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F0149FF1D93108B00FA60FF /* VAKStateKeyframeSelection.h */; };
+		0F014AC71D93108B00FA60FF /* VAKStateKeyframeSelection.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F014A001D93108B00FA60FF /* VAKStateKeyframeSelection.m */; };
+		0F014AC81D93108B00FA60FF /* VAKStateSettingsSelection.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F014A011D93108B00FA60FF /* VAKStateSettingsSelection.h */; };
+		0F014AC91D93108B00FA60FF /* VAKStateSettingsSelection.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F014A021D93108B00FA60FF /* VAKStateSettingsSelection.m */; };
+		0F014ACA1D93108B00FA60FF /* VAKStateTouchSelection.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F014A031D93108B00FA60FF /* VAKStateTouchSelection.h */; };
+		0F014ACB1D93108B00FA60FF /* VAKStateTouchSelection.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F014A041D93108B00FA60FF /* VAKStateTouchSelection.m */; };
+		0F014ACC1D93108B00FA60FF /* VAKReplayManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F014A051D93108B00FA60FF /* VAKReplayManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0F014ACD1D93108B00FA60FF /* VAKReplayManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F014A061D93108B00FA60FF /* VAKReplayManager.m */; };
+		0F014ACE1D93108B00FA60FF /* VAKInjectableTouchHandlerProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F014A081D93108B00FA60FF /* VAKInjectableTouchHandlerProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0F014ACF1D93108B00FA60FF /* VAKTouchVisualizer.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F014A0A1D93108B00FA60FF /* VAKTouchVisualizer.h */; };
+		0F014AD01D93108B00FA60FF /* VAKTouchVisualizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F014A0B1D93108B00FA60FF /* VAKTouchVisualizer.m */; };
+		0F014AD11D93108B00FA60FF /* VAKConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F014A0D1D93108B00FA60FF /* VAKConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0F014AD21D93108B00FA60FF /* VAKConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F014A0E1D93108B00FA60FF /* VAKConstants.m */; };
+		0F014AD31D93108B00FA60FF /* VAKMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F014A0F1D93108B00FA60FF /* VAKMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0F014AD41D93108B00FA60FF /* VisAnalyticsKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F014A101D93108B00FA60FF /* VisAnalyticsKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0F014B091D9310CA00FA60FF /* VAKAbstractModelSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F014AD61D9310C900FA60FF /* VAKAbstractModelSpec.m */; };
+		0F014B0A1D9310CA00FA60FF /* VAKStateFactorySpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F014AD71D9310C900FA60FF /* VAKStateFactorySpec.m */; };
+		0F014B0B1D9310CA00FA60FF /* VAKStateSessionSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F014AD81D9310C900FA60FF /* VAKStateSessionSpec.m */; };
+		0F014B0C1D9310CA00FA60FF /* VAKStateSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F014AD91D9310C900FA60FF /* VAKStateSpec.m */; };
+		0F014B0D1D9310CA00FA60FF /* NSDate+VAKISOFormatSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F014ADB1D9310C900FA60FF /* NSDate+VAKISOFormatSpec.m */; };
+		0F014B0E1D9310CA00FA60FF /* NSString+ReadableLevelSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F014ADC1D9310C900FA60FF /* NSString+ReadableLevelSpec.m */; };
+		0F014B0F1D9310CA00FA60FF /* VAKStateIntegrationSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F014ADE1D9310C900FA60FF /* VAKStateIntegrationSpec.m */; };
+		0F014B101D9310CA00FA60FF /* VAKProvAssociationSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F014AE11D9310C900FA60FF /* VAKProvAssociationSpec.m */; };
+		0F014B111D9310CA00FA60FF /* VAKProvAttributionSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F014AE21D9310C900FA60FF /* VAKProvAttributionSpec.m */; };
+		0F014B121D9310CA00FA60FF /* VAKProvDelegationSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F014AE31D9310C900FA60FF /* VAKProvDelegationSpec.m */; };
+		0F014B131D9310CA00FA60FF /* VAKProvDerivationSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F014AE41D9310C900FA60FF /* VAKProvDerivationSpec.m */; };
+		0F014B141D9310CA00FA60FF /* VAKProvGenerationSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F014AE51D9310C900FA60FF /* VAKProvGenerationSpec.m */; };
+		0F014B151D9310CA00FA60FF /* VAKProvRevisionSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F014AE61D9310C900FA60FF /* VAKProvRevisionSpec.m */; };
+		0F014B161D9310CA00FA60FF /* VAKProvUsageSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F014AE71D9310C900FA60FF /* VAKProvUsageSpec.m */; };
+		0F014B171D9310CA00FA60FF /* VAKProvActivitySpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F014AE91D9310C900FA60FF /* VAKProvActivitySpec.m */; };
+		0F014B181D9310CA00FA60FF /* VAKProvDelegatingSoftwareAgentSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F014AEA1D9310C900FA60FF /* VAKProvDelegatingSoftwareAgentSpec.m */; };
+		0F014B191D9310CA00FA60FF /* VAKProvEntitySpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F014AEB1D9310C900FA60FF /* VAKProvEntitySpec.m */; };
+		0F014B1A1D9310CA00FA60FF /* VAKProvWritingSoftwareAgentSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F014AEC1D9310C900FA60FF /* VAKProvWritingSoftwareAgentSpec.m */; };
+		0F014B1B1D9310CA00FA60FF /* VAKProvBaseSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F014AED1D9310C900FA60FF /* VAKProvBaseSpec.m */; };
+		0F014B1C1D9310CA00FA60FF /* VAKProvSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F014AEE1D9310C900FA60FF /* VAKProvSpec.m */; };
+		0F014B1D1D9310CA00FA60FF /* VAKProvTypeSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F014AEF1D9310C900FA60FF /* VAKProvTypeSpec.m */; };
+		0F014B1E1D9310CA00FA60FF /* VAKBackendSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F014AF21D9310C900FA60FF /* VAKBackendSpec.m */; };
+		0F014B1F1D9310CA00FA60FF /* VAKCustomBackendSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F014AF31D9310C900FA60FF /* VAKCustomBackendSpec.m */; };
+		0F014B201D9310CA00FA60FF /* VAKLoggerManagerBuilderSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F014AF51D9310C900FA60FF /* VAKLoggerManagerBuilderSpec.m */; };
+		0F014B211D9310CA00FA60FF /* VAKDurationCalculatorSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F014AF71D9310C900FA60FF /* VAKDurationCalculatorSpec.m */; };
+		0F014B221D9310CA00FA60FF /* VAKFileReaderSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F014AF91D9310C900FA60FF /* VAKFileReaderSpec.m */; };
+		0F014B231D9310CA00FA60FF /* VAKFilesystemHelperSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F014AFA1D9310C900FA60FF /* VAKFilesystemHelperSpec.m */; };
+		0F014B241D9310CA00FA60FF /* VAKLibraryFileWriterSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F014AFB1D9310C900FA60FF /* VAKLibraryFileWriterSpec.m */; };
+		0F014B251D9310CA00FA60FF /* VAKKeychainSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F014AFD1D9310CA00FA60FF /* VAKKeychainSpec.m */; };
+		0F014B261D9310CA00FA60FF /* VAKLogManagerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F014AFF1D9310CA00FA60FF /* VAKLogManagerSpec.m */; };
+		0F014B271D9310CA00FA60FF /* VAKLogRegistrationBrokerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F014B001D9310CA00FA60FF /* VAKLogRegistrationBrokerSpec.m */; };
+		0F014B281D9310CA00FA60FF /* VAKNoopDispatcherSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F014B021D9310CA00FA60FF /* VAKNoopDispatcherSpec.m */; };
+		0F014B291D9310CA00FA60FF /* VAKConsoleProviderSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F014B051D9310CA00FA60FF /* VAKConsoleProviderSpec.m */; };
+		0F014B2A1D9310CA00FA60FF /* VAKNSLogProviderSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F014B061D9310CA00FA60FF /* VAKNSLogProviderSpec.m */; };
+		0F014B2B1D9310CA00FA60FF /* VAKJsonFileProviderSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F014B081D9310CA00FA60FF /* VAKJsonFileProviderSpec.m */; };
+		0F014B721D9312D200FA60FF /* Expecta.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F014B3B1D93126200FA60FF /* Expecta.framework */; };
+		0F014B731D9312D700FA60FF /* Specta.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F014B6B1D93128100FA60FF /* Specta.framework */; };
+		0F014B741D9312E400FA60FF /* OCMock.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F014B5A1D93127100FA60FF /* OCMock.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0F0149111D93105F00FA60FF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0F0148FC1D93105E00FA60FF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0F0149041D93105E00FA60FF;
+			remoteInfo = VisAnalyticsKit;
+		};
+		0F014B381D93126200FA60FF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0F014B2D1D93126200FA60FF /* Expecta.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 908379791A8B972C009844DA;
+			remoteInfo = Expecta;
+		};
+		0F014B3A1D93126200FA60FF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0F014B2D1D93126200FA60FF /* Expecta.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 908379111A8B9660009844DA;
+			remoteInfo = "Expecta-iOS";
+		};
+		0F014B3C1D93126200FA60FF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0F014B2D1D93126200FA60FF /* Expecta.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3A0A598C1AD4418C003DA3E4;
+			remoteInfo = ExpectaTests;
+		};
+		0F014B3E1D93126200FA60FF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0F014B2D1D93126200FA60FF /* Expecta.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3A0A59BF1AD441CB003DA3E4;
+			remoteInfo = "Expecta-iOSTests";
+		};
+		0F014B401D93126200FA60FF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0F014B2D1D93126200FA60FF /* Expecta.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E9ACDF0C13B2DD520010F4D7;
+			remoteInfo = libExpecta;
+		};
+		0F014B421D93126200FA60FF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0F014B2D1D93126200FA60FF /* Expecta.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E93067CE13B2E6D100EA26FF;
+			remoteInfo = "libExpecta-iOS";
+		};
+		0F014B441D93126200FA60FF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0F014B2D1D93126200FA60FF /* Expecta.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9C4416F917FF3F4A00978F09;
+			remoteInfo = libExpectaTests;
+		};
+		0F014B461D93126200FA60FF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0F014B2D1D93126200FA60FF /* Expecta.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E93067DA13B2E6D100EA26FF;
+			remoteInfo = "libExpecta-iOSTests";
+		};
+		0F014B511D93127100FA60FF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0F014B481D93127100FA60FF /* OCMock.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 030EF0A814632FD000B04273;
+			remoteInfo = OCMock;
+		};
+		0F014B531D93127100FA60FF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0F014B481D93127100FA60FF /* OCMock.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 03565A3118F0566E003AE91E;
+			remoteInfo = OCMockTests;
+		};
+		0F014B551D93127100FA60FF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0F014B481D93127100FA60FF /* OCMock.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 030EF0DC14632FF700B04273;
+			remoteInfo = OCMockLib;
+		};
+		0F014B571D93127100FA60FF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0F014B481D93127100FA60FF /* OCMock.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D31108AD1828DB8700737925;
+			remoteInfo = OCMockLibTests;
+		};
+		0F014B591D93127100FA60FF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0F014B481D93127100FA60FF /* OCMock.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F0B950F11B0080BE00942C38;
+			remoteInfo = "OCMock iOS";
+		};
+		0F014B5B1D93127100FA60FF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0F014B481D93127100FA60FF /* OCMock.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 817EB1621BD765130047E85A;
+			remoteInfo = "OCMock tvOS";
+		};
+		0F014B661D93128100FA60FF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0F014B5D1D93128100FA60FF /* Specta.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E9536CD81968D30B003D1FBA;
+			remoteInfo = Specta;
+		};
+		0F014B681D93128100FA60FF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0F014B5D1D93128100FA60FF /* Specta.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E9536CE31968D30B003D1FBA;
+			remoteInfo = SpectaTests;
+		};
+		0F014B6A1D93128100FA60FF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0F014B5D1D93128100FA60FF /* Specta.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E9536D011968D3EE003D1FBA;
+			remoteInfo = "Specta-iOS";
+		};
+		0F014B6C1D93128100FA60FF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0F014B5D1D93128100FA60FF /* Specta.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E9536D0B1968D3EE003D1FBA;
+			remoteInfo = "Specta-iOSTests";
+		};
+		0F014B6E1D93128100FA60FF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0F014B5D1D93128100FA60FF /* Specta.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E91713F119DF07BB00921712;
+			remoteInfo = libSpecta;
+		};
+		0F014B701D93128100FA60FF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0F014B5D1D93128100FA60FF /* Specta.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E917140919DF07D700921712;
+			remoteInfo = "libSpecta-iOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0F0149051D93105E00FA60FF /* VisAnalyticsKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = VisAnalyticsKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0F01490A1D93105E00FA60FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0F01490F1D93105F00FA60FF /* VisAnalyticsKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VisAnalyticsKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0F0149161D93105F00FA60FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0F0149201D93108B00FA60FF /* Aspects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Aspects.h; sourceTree = "<group>"; };
+		0F0149211D93108B00FA60FF /* Aspects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Aspects.m; sourceTree = "<group>"; };
+		0F0149241D93108B00FA60FF /* VAKSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VAKSession.h; sourceTree = "<group>"; };
+		0F0149251D93108B00FA60FF /* VAKSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VAKSession.m; sourceTree = "<group>"; };
+		0F0149261D93108B00FA60FF /* VAKState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VAKState.h; sourceTree = "<group>"; };
+		0F0149271D93108B00FA60FF /* VAKState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VAKState.m; sourceTree = "<group>"; };
+		0F0149281D93108B00FA60FF /* VAKStateFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VAKStateFactory.h; sourceTree = "<group>"; };
+		0F0149291D93108B00FA60FF /* VAKStateFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VAKStateFactory.m; sourceTree = "<group>"; };
+		0F01492A1D93108B00FA60FF /* VAKStateFactoryProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VAKStateFactoryProtocol.h; sourceTree = "<group>"; };
+		0F01492B1D93108B00FA60FF /* VAKStateProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VAKStateProtocol.h; sourceTree = "<group>"; };
+		0F01492D1D93108B00FA60FF /* VAKTouch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VAKTouch.h; sourceTree = "<group>"; };
+		0F01492E1D93108B00FA60FF /* VAKTouch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VAKTouch.m; sourceTree = "<group>"; };
+		0F01492F1D93108B00FA60FF /* VAKTouchCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VAKTouchCollection.h; sourceTree = "<group>"; };
+		0F0149301D93108B00FA60FF /* VAKTouchCollection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VAKTouchCollection.m; sourceTree = "<group>"; };
+		0F0149311D93108B00FA60FF /* VAKAbstractModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VAKAbstractModel.h; sourceTree = "<group>"; };
+		0F0149321D93108B00FA60FF /* VAKAbstractModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VAKAbstractModel.m; sourceTree = "<group>"; };
+		0F0149331D93108B00FA60FF /* VAKPersistableProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VAKPersistableProtocol.h; sourceTree = "<group>"; };
+		0F0149341D93108B00FA60FF /* VAKTaggableProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VAKTaggableProtocol.h; sourceTree = "<group>"; };
+		0F0149351D93108B00FA60FF /* VAKTransformableProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VAKTransformableProtocol.h; sourceTree = "<group>"; };
+		0F0149371D93108B00FA60FF /* NSDate+VAKISOFormat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+VAKISOFormat.h"; sourceTree = "<group>"; };
+		0F0149381D93108B00FA60FF /* NSDate+VAKISOFormat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+VAKISOFormat.m"; sourceTree = "<group>"; };
+		0F0149391D93108B00FA60FF /* NSObject+VAKAspect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+VAKAspect.h"; sourceTree = "<group>"; };
+		0F01493A1D93108B00FA60FF /* NSObject+VAKAspect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+VAKAspect.m"; sourceTree = "<group>"; };
+		0F01493B1D93108B00FA60FF /* NSObject+VAKShortId.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+VAKShortId.h"; sourceTree = "<group>"; };
+		0F01493C1D93108B00FA60FF /* NSObject+VAKShortId.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+VAKShortId.m"; sourceTree = "<group>"; };
+		0F01493D1D93108B00FA60FF /* NSString+ReadableLevel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+ReadableLevel.h"; sourceTree = "<group>"; };
+		0F01493E1D93108B00FA60FF /* NSString+ReadableLevel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+ReadableLevel.m"; sourceTree = "<group>"; };
+		0F01493F1D93108B00FA60FF /* UITouch+VAKTransformable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITouch+VAKTransformable.h"; sourceTree = "<group>"; };
+		0F0149401D93108B00FA60FF /* UITouch+VAKTransformable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITouch+VAKTransformable.m"; sourceTree = "<group>"; };
+		0F0149441D93108B00FA60FF /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
+		0F0149451D93108B00FA60FF /* back@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back@2x.png"; sourceTree = "<group>"; };
+		0F0149461D93108B00FA60FF /* back@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back@3x.png"; sourceTree = "<group>"; };
+		0F0149471D93108B00FA60FF /* close-dark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "close-dark.png"; sourceTree = "<group>"; };
+		0F0149481D93108B00FA60FF /* close-dark@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "close-dark@2x.png"; sourceTree = "<group>"; };
+		0F0149491D93108B00FA60FF /* close-dark@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "close-dark@3x.png"; sourceTree = "<group>"; };
+		0F01494A1D93108B00FA60FF /* close-light.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "close-light.png"; sourceTree = "<group>"; };
+		0F01494B1D93108B00FA60FF /* close-light@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "close-light@2x.png"; sourceTree = "<group>"; };
+		0F01494C1D93108B00FA60FF /* close-light@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "close-light@3x.png"; sourceTree = "<group>"; };
+		0F01494E1D93108B00FA60FF /* pause.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pause.png; sourceTree = "<group>"; };
+		0F01494F1D93108B00FA60FF /* pause@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pause@2x.png"; sourceTree = "<group>"; };
+		0F0149501D93108B00FA60FF /* pause@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pause@3x.png"; sourceTree = "<group>"; };
+		0F0149511D93108B00FA60FF /* play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play.png; sourceTree = "<group>"; };
+		0F0149521D93108B00FA60FF /* play@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "play@2x.png"; sourceTree = "<group>"; };
+		0F0149531D93108B00FA60FF /* play@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "play@3x.png"; sourceTree = "<group>"; };
+		0F0149551D93108B00FA60FF /* header.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = header.png; sourceTree = "<group>"; };
+		0F0149561D93108B00FA60FF /* header@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "header@2x.png"; sourceTree = "<group>"; };
+		0F0149571D93108B00FA60FF /* header@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "header@3x.png"; sourceTree = "<group>"; };
+		0F0149581D93108B00FA60FF /* hr.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hr.png; sourceTree = "<group>"; };
+		0F0149591D93108B00FA60FF /* hr@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hr@2x.png"; sourceTree = "<group>"; };
+		0F01495A1D93108B00FA60FF /* hr@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hr@3x.png"; sourceTree = "<group>"; };
+		0F01495C1D93108B00FA60FF /* couchbase-lite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "couchbase-lite.png"; sourceTree = "<group>"; };
+		0F01495D1D93108B00FA60FF /* couchbase-lite@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "couchbase-lite@2x.png"; sourceTree = "<group>"; };
+		0F01495E1D93108B00FA60FF /* couchbase-lite@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "couchbase-lite@3x.png"; sourceTree = "<group>"; };
+		0F01495F1D93108B00FA60FF /* json.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = json.png; sourceTree = "<group>"; };
+		0F0149601D93108B00FA60FF /* json@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "json@2x.png"; sourceTree = "<group>"; };
+		0F0149611D93108B00FA60FF /* json@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "json@3x.png"; sourceTree = "<group>"; };
+		0F0149641D93108B00FA60FF /* VAKBackend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VAKBackend.h; sourceTree = "<group>"; };
+		0F0149651D93108B00FA60FF /* VAKBackend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VAKBackend.m; sourceTree = "<group>"; };
+		0F0149661D93108B00FA60FF /* VAKBackendProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VAKBackendProtocol.h; sourceTree = "<group>"; };
+		0F0149671D93108B00FA60FF /* VAKCustomBackend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VAKCustomBackend.h; sourceTree = "<group>"; };
+		0F0149681D93108B00FA60FF /* VAKCustomBackend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VAKCustomBackend.m; sourceTree = "<group>"; };
+		0F01496A1D93108B00FA60FF /* VAKDefaultBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VAKDefaultBuilder.h; sourceTree = "<group>"; };
+		0F01496B1D93108B00FA60FF /* VAKDefaultBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VAKDefaultBuilder.m; sourceTree = "<group>"; };
+		0F01496C1D93108B00FA60FF /* VAKLogManagerBuilderProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VAKLogManagerBuilderProtocol.h; sourceTree = "<group>"; };
+		0F01496F1D93108B00FA60FF /* VAKAppSupportFilesystemHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VAKAppSupportFilesystemHelper.h; sourceTree = "<group>"; };
+		0F0149701D93108B00FA60FF /* VAKAppSupportFilesystemHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VAKAppSupportFilesystemHelper.m; sourceTree = "<group>"; };
+		0F0149711D93108B00FA60FF /* VAKFilesystemHelperBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VAKFilesystemHelperBase.h; sourceTree = "<group>"; };
+		0F0149721D93108B00FA60FF /* VAKFilesystemHelperBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VAKFilesystemHelperBase.m; sourceTree = "<group>"; };
+		0F0149731D93108B00FA60FF /* VAKLibraryFilesystemHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VAKLibraryFilesystemHelper.h; sourceTree = "<group>"; };
+		0F0149741D93108B00FA60FF /* VAKLibraryFilesystemHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VAKLibraryFilesystemHelper.m; sourceTree = "<group>"; };
+		0F0149761D93108B00FA60FF /* VAKAppSupportFileReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VAKAppSupportFileReader.h; sourceTree = "<group>"; };
+		0F0149771D93108B00FA60FF /* VAKAppSupportFileReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VAKAppSupportFileReader.m; sourceTree = "<group>"; };
+		0F0149781D93108B00FA60FF /* VAKFileReaderProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VAKFileReaderProtocol.h; sourceTree = "<group>"; };
+		0F01497A1D93108B00FA60FF /* VAKAppSupportFileWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VAKAppSupportFileWriter.h; sourceTree = "<group>"; };
+		0F01497B1D93108B00FA60FF /* VAKAppSupportFileWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VAKAppSupportFileWriter.m; sourceTree = "<group>"; };
+		0F01497C1D93108B00FA60FF /* VAKFileWriterBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VAKFileWriterBase.h; sourceTree = "<group>"; };
+		0F01497D1D93108B00FA60FF /* VAKFileWriterBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VAKFileWriterBase.m; sourceTree = "<group>"; };
+		0F01497E1D93108B00FA60FF /* VAKFileWriterConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VAKFileWriterConstants.h; sourceTree = "<group>"; };
+		0F01497F1D93108B00FA60FF /* VAKFileWriterProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VAKFileWriterProtocol.h; sourceTree = "<group>"; };
+		0F0149801D93108B00FA60FF /* VAKLibraryFileWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VAKLibraryFileWriter.h; sourceTree = "<group>"; };
+		0F0149811D93108B00FA60FF /* VAKLibraryFileWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VAKLibraryFileWriter.m; sourceTree = "<group>"; };
+		0F0149831D93108B00FA60FF /* VAKDefaultFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VAKDefaultFormatter.h; sourceTree = "<group>"; };
+		0F0149841D93108B00FA60FF /* VAKDefaultFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VAKDefaultFormatter.m; sourceTree = "<group>"; };
+		0F0149851D93108B00FA60FF /* VAKFormatterProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VAKFormatterProtocol.h; sourceTree = "<group>"; };
+		0F0149861D93108B00FA60FF /* VAKMatrixFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VAKMatrixFormatter.h; sourceTree = "<group>"; };
+		0F0149871D93108B00FA60FF /* VAKMatrixFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VAKMatrixFormatter.m; sourceTree = "<group>"; };
+		0F0149881D93108B00FA60FF /* VAKVectorFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VAKVectorFormatter.h; sourceTree = "<group>"; };
+		0F0149891D93108B00FA60FF /* VAKVectorFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VAKVectorFormatter.m; sourceTree = "<group>"; };
+		0F01498B1D93108B00FA60FF /* VAKAliasGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VAKAliasGenerator.h; sourceTree = "<group>"; };
+		0F01498C1D93108B00FA60FF /* VAKAliasGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VAKAliasGenerator.m; sourceTree = "<group>"; };
+		0F01498E1D93108B00FA60FF /* VAKKeyChain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VAKKeyChain.h; sourceTree = "<group>"; };
+		0F01498F1D93108B00FA60FF /* VAKKeychain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VAKKeychain.m; sourceTree = "<group>"; };
+		0F0149911D93108B00FA60FF /* VAKLogManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VAKLogManager.h; sourceTree = "<group>"; };
+		0F0149921D93108B00FA60FF /* VAKLogManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VAKLogManager.m; sourceTree = "<group>"; };
+		0F0149931D93108B00FA60FF /* VAKLogRegistrationBroker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VAKLogRegistrationBroker.h; sourceTree = "<group>"; };
+		0F0149941D93108B00FA60FF /* VAKLogRegistrationBroker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VAKLogRegistrationBroker.m; sourceTree = "<group>"; };
+		0F0149961D93108B00FA60FF /* VAKNoopDispatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VAKNoopDispatcher.h; sourceTree = "<group>"; };
+		0F0149971D93108B00FA60FF /* VAKNoopDispatcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VAKNoopDispatcher.m; sourceTree = "<group>"; };
+		0F0149981D93108B00FA60FF /* VAKRemoteDispatchProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VAKRemoteDispatchProtocol.h; sourceTree = "<group>"; };
+		0F01499B1D93108B00FA60FF /* VAKConsoleProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VAKConsoleProvider.h; sourceTree = "<group>"; };
+		0F01499C1D93108B00FA60FF /* VAKConsoleProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VAKConsoleProvider.m; sourceTree = "<group>"; };
+		0F01499D1D93108B00FA60FF /* VAKNSLogProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VAKNSLogProvider.h; sourceTree = "<group>"; };
+		0F01499E1D93108B00FA60FF /* VAKNSLogProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VAKNSLogProvider.m; sourceTree = "<group>"; };
+		0F0149A01D93108B00FA60FF /* VAKJsonFileProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VAKJsonFileProvider.h; sourceTree = "<group>"; };
+		0F0149A11D93108B00FA60FF /* VAKJsonFileProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VAKJsonFileProvider.m; sourceTree = "<group>"; };
+		0F0149A21D93108B00FA60FF /* VAKJsonProviderProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VAKJsonProviderProtocol.h; sourceTree = "<group>"; };
+		0F0149A31D93108B00FA60FF /* VAKFileProviderProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VAKFileProviderProtocol.h; sourceTree = "<group>"; };
+		0F0149A41D93108B00FA60FF /* VAKPersistenceProviderProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VAKPersistenceProviderProtocol.h; sourceTree = "<group>"; };
+		0F0149A61D93108B00FA60FF /* VAKSerializableProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VAKSerializableProtocol.h; sourceTree = "<group>"; };
+		0F0149A91D93108B00FA60FF /* VAKProvFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VAKProvFactory.h; sourceTree = "<group>"; };
+		0F0149AA1D93108B00FA60FF /* VAKProvFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VAKProvFactory.m; sourceTree = "<group>"; };
+		0F0149AB1D93108B00FA60FF /* VAKProvSessionFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VAKProvSessionFactory.h; sourceTree = "<group>"; };
+		0F0149AC1D93108B00FA60FF /* VAKProvSessionFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VAKProvSessionFactory.m; sourceTree = "<group>"; };
+		0F0149AD1D93108B00FA60FF /* VAKProvStateFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VAKProvStateFactory.h; sourceTree = "<group>"; };
+		0F0149AE1D93108B00FA60FF /* VAKProvStateFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VAKProvStateFactory.m; sourceTree = "<group>"; };
+		0F0149B01D93108B00FA60FF /* VAKProvAssociation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VAKProvAssociation.h; sourceTree = "<group>"; };
+		0F0149B11D93108B00FA60FF /* VAKProvAssociation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VAKProvAssociation.m; sourceTree = "<group>"; };
+		0F0149B21D93108B00FA60FF /* VAKProvAttribution.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VAKProvAttribution.h; sourceTree = "<group>"; };
+		0F0149B31D93108B00FA60FF /* VAKProvAttribution.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VAKProvAttribution.m; sourceTree = "<group>"; };
+		0F0149B41D93108B00FA60FF /* VAKProvDelegation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VAKProvDelegation.h; sourceTree = "<group>"; };
+		0F0149B51D93108B00FA60FF /* VAKProvDelegation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VAKProvDelegation.m; sourceTree = "<group>"; };
+		0F0149B61D93108B00FA60FF /* VAKProvDerivation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VAKProvDerivation.h; sourceTree = "<group>"; };
+		0F0149B71D93108B00FA60FF /* VAKProvDerivation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VAKProvDerivation.m; sourceTree = "<group>"; };
+		0F0149B81D93108B00FA60FF /* VAKProvGeneration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VAKProvGeneration.h; sourceTree = "<group>"; };
+		0F0149B91D93108B00FA60FF /* VAKProvGeneration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VAKProvGeneration.m; sourceTree = "<group>"; };
+		0F0149BA1D93108B00FA60FF /* VAKProvRevision.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VAKProvRevision.h; sourceTree = "<group>"; };
+		0F0149BB1D93108B00FA60FF /* VAKProvRevision.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VAKProvRevision.m; sourceTree = "<group>"; };
+		0F0149BC1D93108B00FA60FF /* VAKProvUsage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VAKProvUsage.h; sourceTree = "<group>"; };
+		0F0149BD1D93108B00FA60FF /* VAKProvUsage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VAKProvUsage.m; sourceTree = "<group>"; };
+		0F0149BF1D93108B00FA60FF /* VAKProvActivity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VAKProvActivity.h; sourceTree = "<group>"; };
+		0F0149C01D93108B00FA60FF /* VAKProvActivity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VAKProvActivity.m; sourceTree = "<group>"; };
+		0F0149C11D93108B00FA60FF /* VAKProvDelegatingSoftwareAgent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VAKProvDelegatingSoftwareAgent.h; sourceTree = "<group>"; };
+		0F0149C21D93108B00FA60FF /* VAKProvDelegatingSoftwareAgent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VAKProvDelegatingSoftwareAgent.m; sourceTree = "<group>"; };
+		0F0149C31D93108B00FA60FF /* VAKProvEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VAKProvEntity.h; sourceTree = "<group>"; };
+		0F0149C41D93108B00FA60FF /* VAKProvEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VAKProvEntity.m; sourceTree = "<group>"; };
+		0F0149C51D93108B00FA60FF /* VAKProvWritingSoftwareAgent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VAKProvWritingSoftwareAgent.h; sourceTree = "<group>"; };
+		0F0149C61D93108B00FA60FF /* VAKProvWritingSoftwareAgent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VAKProvWritingSoftwareAgent.m; sourceTree = "<group>"; };
+		0F0149C81D93108B00FA60FF /* VAKProvKeys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VAKProvKeys.h; sourceTree = "<group>"; };
+		0F0149C91D93108B00FA60FF /* VAKProvKeys.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VAKProvKeys.m; sourceTree = "<group>"; };
+		0F0149CA1D93108B00FA60FF /* VAKProv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VAKProv.h; sourceTree = "<group>"; };
+		0F0149CB1D93108B00FA60FF /* VAKProv.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VAKProv.m; sourceTree = "<group>"; };
+		0F0149CC1D93108B00FA60FF /* VAKProvBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VAKProvBase.h; sourceTree = "<group>"; };
+		0F0149CD1D93108B00FA60FF /* VAKProvBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VAKProvBase.m; sourceTree = "<group>"; };
+		0F0149CE1D93108B00FA60FF /* VAKProvType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VAKProvType.h; sourceTree = "<group>"; };
+		0F0149CF1D93108B00FA60FF /* VAKProvType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VAKProvType.m; sourceTree = "<group>"; };
+		0F0149D11D93108B00FA60FF /* VAKScreenInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VAKScreenInfo.h; sourceTree = "<group>"; };
+		0F0149D21D93108B00FA60FF /* VAKScreenInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VAKScreenInfo.m; sourceTree = "<group>"; };
+		0F0149D61D93108B00FA60FF /* VAKReplayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VAKReplayViewController.h; sourceTree = "<group>"; };
+		0F0149D71D93108B00FA60FF /* VAKReplayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VAKReplayViewController.m; sourceTree = "<group>"; };
+		0F0149D91D93108B00FA60FF /* VAKSessionSelectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VAKSessionSelectionViewController.h; sourceTree = "<group>"; };
+		0F0149DA1D93108B00FA60FF /* VAKSessionSelectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VAKSessionSelectionViewController.m; sourceTree = "<group>"; };
+		0F0149DB1D93108B00FA60FF /* VAKSessionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VAKSessionViewCell.h; sourceTree = "<group>"; };
+		0F0149DC1D93108B00FA60FF /* VAKSessionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VAKSessionViewCell.m; sourceTree = "<group>"; };
+		0F0149DE1D93108B00FA60FF /* VAKSourceSelectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VAKSourceSelectionViewController.h; sourceTree = "<group>"; };
+		0F0149DF1D93108B00FA60FF /* VAKSourceSelectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VAKSourceSelectionViewController.m; sourceTree = "<group>"; };
+		0F0149E01D93108B00FA60FF /* VAKSourceViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VAKSourceViewCell.h; sourceTree = "<group>"; };
+		0F0149E11D93108B00FA60FF /* VAKSourceViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VAKSourceViewCell.m; sourceTree = "<group>"; };
+		0F0149E21D93108B00FA60FF /* VAKBaseSelectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VAKBaseSelectionViewController.h; sourceTree = "<group>"; };
+		0F0149E31D93108B00FA60FF /* VAKBaseSelectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VAKBaseSelectionViewController.m; sourceTree = "<group>"; };
+		0F0149E51D93108B00FA60FF /* VAKBaseReplayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VAKBaseReplayView.h; sourceTree = "<group>"; };
+		0F0149E61D93108B00FA60FF /* VAKBaseReplayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VAKBaseReplayView.m; sourceTree = "<group>"; };
+		0F0149E71D93108B00FA60FF /* VAKReplayHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VAKReplayHeader.h; sourceTree = "<group>"; };
+		0F0149E81D93108B00FA60FF /* VAKReplayHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VAKReplayHeader.m; sourceTree = "<group>"; };
+		0F0149E91D93108B00FA60FF /* VAKReplayPlayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VAKReplayPlayerView.h; sourceTree = "<group>"; };
+		0F0149EA1D93108B00FA60FF /* VAKReplayPlayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VAKReplayPlayerView.m; sourceTree = "<group>"; };
+		0F0149EB1D93108B00FA60FF /* VAKReplayViewHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VAKReplayViewHelper.h; sourceTree = "<group>"; };
+		0F0149ED1D93108B00FA60FF /* VAKDurationCalculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VAKDurationCalculator.h; sourceTree = "<group>"; };
+		0F0149EE1D93108B00FA60FF /* VAKDurationCalculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VAKDurationCalculator.m; sourceTree = "<group>"; };
+		0F0149F01D93108B00FA60FF /* VAKReplayTagHandlerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VAKReplayTagHandlerProtocol.h; sourceTree = "<group>"; };
+		0F0149F11D93108B00FA60FF /* VAKReplayTouchTagHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VAKReplayTouchTagHandler.h; sourceTree = "<group>"; };
+		0F0149F21D93108B00FA60FF /* VAKReplayTouchTagHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VAKReplayTouchTagHandler.m; sourceTree = "<group>"; };
+		0F0149F31D93108B00FA60FF /* VAKReplayViewTagHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VAKReplayViewTagHandler.h; sourceTree = "<group>"; };
+		0F0149F41D93108B00FA60FF /* VAKReplayViewTagHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VAKReplayViewTagHandler.m; sourceTree = "<group>"; };
+		0F0149F71D93108B00FA60FF /* VAKStateBaseSelection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VAKStateBaseSelection.h; sourceTree = "<group>"; };
+		0F0149F81D93108B00FA60FF /* VAKStateBaseSelection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VAKStateBaseSelection.m; sourceTree = "<group>"; };
+		0F0149F91D93108B00FA60FF /* VAKStateControllerSelection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VAKStateControllerSelection.h; sourceTree = "<group>"; };
+		0F0149FA1D93108B00FA60FF /* VAKStateControllerSelection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VAKStateControllerSelection.m; sourceTree = "<group>"; };
+		0F0149FB1D93108B00FA60FF /* VAKStateCustomSelection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VAKStateCustomSelection.h; sourceTree = "<group>"; };
+		0F0149FC1D93108B00FA60FF /* VAKStateCustomSelection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VAKStateCustomSelection.m; sourceTree = "<group>"; };
+		0F0149FD1D93108B00FA60FF /* VAKStateDoneSelection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VAKStateDoneSelection.h; sourceTree = "<group>"; };
+		0F0149FE1D93108B00FA60FF /* VAKStateDoneSelection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VAKStateDoneSelection.m; sourceTree = "<group>"; };
+		0F0149FF1D93108B00FA60FF /* VAKStateKeyframeSelection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VAKStateKeyframeSelection.h; sourceTree = "<group>"; };
+		0F014A001D93108B00FA60FF /* VAKStateKeyframeSelection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VAKStateKeyframeSelection.m; sourceTree = "<group>"; };
+		0F014A011D93108B00FA60FF /* VAKStateSettingsSelection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VAKStateSettingsSelection.h; sourceTree = "<group>"; };
+		0F014A021D93108B00FA60FF /* VAKStateSettingsSelection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VAKStateSettingsSelection.m; sourceTree = "<group>"; };
+		0F014A031D93108B00FA60FF /* VAKStateTouchSelection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VAKStateTouchSelection.h; sourceTree = "<group>"; };
+		0F014A041D93108B00FA60FF /* VAKStateTouchSelection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VAKStateTouchSelection.m; sourceTree = "<group>"; };
+		0F014A051D93108B00FA60FF /* VAKReplayManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VAKReplayManager.h; sourceTree = "<group>"; };
+		0F014A061D93108B00FA60FF /* VAKReplayManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VAKReplayManager.m; sourceTree = "<group>"; };
+		0F014A081D93108B00FA60FF /* VAKInjectableTouchHandlerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VAKInjectableTouchHandlerProtocol.h; sourceTree = "<group>"; };
+		0F014A0A1D93108B00FA60FF /* VAKTouchVisualizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VAKTouchVisualizer.h; sourceTree = "<group>"; };
+		0F014A0B1D93108B00FA60FF /* VAKTouchVisualizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VAKTouchVisualizer.m; sourceTree = "<group>"; };
+		0F014A0D1D93108B00FA60FF /* VAKConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VAKConstants.h; sourceTree = "<group>"; };
+		0F014A0E1D93108B00FA60FF /* VAKConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VAKConstants.m; sourceTree = "<group>"; };
+		0F014A0F1D93108B00FA60FF /* VAKMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VAKMacros.h; sourceTree = "<group>"; };
+		0F014A101D93108B00FA60FF /* VisAnalyticsKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VisAnalyticsKit.h; sourceTree = "<group>"; };
+		0F014AD61D9310C900FA60FF /* VAKAbstractModelSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VAKAbstractModelSpec.m; sourceTree = "<group>"; };
+		0F014AD71D9310C900FA60FF /* VAKStateFactorySpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VAKStateFactorySpec.m; sourceTree = "<group>"; };
+		0F014AD81D9310C900FA60FF /* VAKStateSessionSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VAKStateSessionSpec.m; sourceTree = "<group>"; };
+		0F014AD91D9310C900FA60FF /* VAKStateSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VAKStateSpec.m; sourceTree = "<group>"; };
+		0F014ADB1D9310C900FA60FF /* NSDate+VAKISOFormatSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+VAKISOFormatSpec.m"; sourceTree = "<group>"; };
+		0F014ADC1D9310C900FA60FF /* NSString+ReadableLevelSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+ReadableLevelSpec.m"; sourceTree = "<group>"; };
+		0F014ADE1D9310C900FA60FF /* VAKStateIntegrationSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VAKStateIntegrationSpec.m; sourceTree = "<group>"; };
+		0F014AE11D9310C900FA60FF /* VAKProvAssociationSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VAKProvAssociationSpec.m; sourceTree = "<group>"; };
+		0F014AE21D9310C900FA60FF /* VAKProvAttributionSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VAKProvAttributionSpec.m; sourceTree = "<group>"; };
+		0F014AE31D9310C900FA60FF /* VAKProvDelegationSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VAKProvDelegationSpec.m; sourceTree = "<group>"; };
+		0F014AE41D9310C900FA60FF /* VAKProvDerivationSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VAKProvDerivationSpec.m; sourceTree = "<group>"; };
+		0F014AE51D9310C900FA60FF /* VAKProvGenerationSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VAKProvGenerationSpec.m; sourceTree = "<group>"; };
+		0F014AE61D9310C900FA60FF /* VAKProvRevisionSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VAKProvRevisionSpec.m; sourceTree = "<group>"; };
+		0F014AE71D9310C900FA60FF /* VAKProvUsageSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VAKProvUsageSpec.m; sourceTree = "<group>"; };
+		0F014AE91D9310C900FA60FF /* VAKProvActivitySpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VAKProvActivitySpec.m; sourceTree = "<group>"; };
+		0F014AEA1D9310C900FA60FF /* VAKProvDelegatingSoftwareAgentSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VAKProvDelegatingSoftwareAgentSpec.m; sourceTree = "<group>"; };
+		0F014AEB1D9310C900FA60FF /* VAKProvEntitySpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VAKProvEntitySpec.m; sourceTree = "<group>"; };
+		0F014AEC1D9310C900FA60FF /* VAKProvWritingSoftwareAgentSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VAKProvWritingSoftwareAgentSpec.m; sourceTree = "<group>"; };
+		0F014AED1D9310C900FA60FF /* VAKProvBaseSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VAKProvBaseSpec.m; sourceTree = "<group>"; };
+		0F014AEE1D9310C900FA60FF /* VAKProvSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VAKProvSpec.m; sourceTree = "<group>"; };
+		0F014AEF1D9310C900FA60FF /* VAKProvTypeSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VAKProvTypeSpec.m; sourceTree = "<group>"; };
+		0F014AF21D9310C900FA60FF /* VAKBackendSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VAKBackendSpec.m; sourceTree = "<group>"; };
+		0F014AF31D9310C900FA60FF /* VAKCustomBackendSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VAKCustomBackendSpec.m; sourceTree = "<group>"; };
+		0F014AF51D9310C900FA60FF /* VAKLoggerManagerBuilderSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VAKLoggerManagerBuilderSpec.m; sourceTree = "<group>"; };
+		0F014AF71D9310C900FA60FF /* VAKDurationCalculatorSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VAKDurationCalculatorSpec.m; sourceTree = "<group>"; };
+		0F014AF91D9310C900FA60FF /* VAKFileReaderSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VAKFileReaderSpec.m; sourceTree = "<group>"; };
+		0F014AFA1D9310C900FA60FF /* VAKFilesystemHelperSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VAKFilesystemHelperSpec.m; sourceTree = "<group>"; };
+		0F014AFB1D9310C900FA60FF /* VAKLibraryFileWriterSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VAKLibraryFileWriterSpec.m; sourceTree = "<group>"; };
+		0F014AFD1D9310CA00FA60FF /* VAKKeychainSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VAKKeychainSpec.m; sourceTree = "<group>"; };
+		0F014AFF1D9310CA00FA60FF /* VAKLogManagerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VAKLogManagerSpec.m; sourceTree = "<group>"; };
+		0F014B001D9310CA00FA60FF /* VAKLogRegistrationBrokerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VAKLogRegistrationBrokerSpec.m; sourceTree = "<group>"; };
+		0F014B021D9310CA00FA60FF /* VAKNoopDispatcherSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VAKNoopDispatcherSpec.m; sourceTree = "<group>"; };
+		0F014B051D9310CA00FA60FF /* VAKConsoleProviderSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VAKConsoleProviderSpec.m; sourceTree = "<group>"; };
+		0F014B061D9310CA00FA60FF /* VAKNSLogProviderSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VAKNSLogProviderSpec.m; sourceTree = "<group>"; };
+		0F014B081D9310CA00FA60FF /* VAKJsonFileProviderSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VAKJsonFileProviderSpec.m; sourceTree = "<group>"; };
+		0F014B2D1D93126200FA60FF /* Expecta.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Expecta.xcodeproj; path = Carthage/Checkouts/expecta/Expecta.xcodeproj; sourceTree = SOURCE_ROOT; };
+		0F014B481D93127100FA60FF /* OCMock.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = OCMock.xcodeproj; path = Carthage/Checkouts/ocmock/Source/OCMock.xcodeproj; sourceTree = SOURCE_ROOT; };
+		0F014B5D1D93128100FA60FF /* Specta.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Specta.xcodeproj; path = Carthage/Checkouts/specta/Specta/Specta.xcodeproj; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0F0149011D93105E00FA60FF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0F01490C1D93105F00FA60FF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F014B741D9312E400FA60FF /* OCMock.framework in Frameworks */,
+				0F014B731D9312D700FA60FF /* Specta.framework in Frameworks */,
+				0F014B721D9312D200FA60FF /* Expecta.framework in Frameworks */,
+				0F0149101D93105F00FA60FF /* VisAnalyticsKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0F0148FB1D93105E00FA60FF = {
+			isa = PBXGroup;
+			children = (
+				0F014B2C1D93113C00FA60FF /* Frameworks */,
+				0F0149071D93105E00FA60FF /* VisAnalyticsKit */,
+				0F0149131D93105F00FA60FF /* VisAnalyticsKitTests */,
+				0F0149061D93105E00FA60FF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0F0149061D93105E00FA60FF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0F0149051D93105E00FA60FF /* VisAnalyticsKit.framework */,
+				0F01490F1D93105F00FA60FF /* VisAnalyticsKitTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0F0149071D93105E00FA60FF /* VisAnalyticsKit */ = {
+			isa = PBXGroup;
+			children = (
+				0F01491F1D93108B00FA60FF /* Aspects */,
+				0F0149221D93108B00FA60FF /* Domain */,
+				0F0149361D93108B00FA60FF /* Extension */,
+				0F0149411D93108B00FA60FF /* GUIResources */,
+				0F0149621D93108B00FA60FF /* Log */,
+				0F0149A71D93108B00FA60FF /* Prov */,
+				0F0149D31D93108B00FA60FF /* Replay */,
+				0F014A0C1D93108B00FA60FF /* Utils */,
+				0F014A101D93108B00FA60FF /* VisAnalyticsKit.h */,
+				0F01490A1D93105E00FA60FF /* Info.plist */,
+			);
+			path = VisAnalyticsKit;
+			sourceTree = "<group>";
+		};
+		0F0149131D93105F00FA60FF /* VisAnalyticsKitTests */ = {
+			isa = PBXGroup;
+			children = (
+				0F014AD51D9310C900FA60FF /* Domain */,
+				0F014ADA1D9310C900FA60FF /* Extension */,
+				0F014ADD1D9310C900FA60FF /* Integration */,
+				0F014ADF1D9310C900FA60FF /* Prov */,
+				0F014AF01D9310C900FA60FF /* Service */,
+				0F0149161D93105F00FA60FF /* Info.plist */,
+			);
+			path = VisAnalyticsKitTests;
+			sourceTree = "<group>";
+		};
+		0F01491F1D93108B00FA60FF /* Aspects */ = {
+			isa = PBXGroup;
+			children = (
+				0F0149201D93108B00FA60FF /* Aspects.h */,
+				0F0149211D93108B00FA60FF /* Aspects.m */,
+			);
+			path = Aspects;
+			sourceTree = "<group>";
+		};
+		0F0149221D93108B00FA60FF /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				0F0149231D93108B00FA60FF /* State */,
+				0F01492C1D93108B00FA60FF /* Touch */,
+				0F0149311D93108B00FA60FF /* VAKAbstractModel.h */,
+				0F0149321D93108B00FA60FF /* VAKAbstractModel.m */,
+				0F0149331D93108B00FA60FF /* VAKPersistableProtocol.h */,
+				0F0149341D93108B00FA60FF /* VAKTaggableProtocol.h */,
+				0F0149351D93108B00FA60FF /* VAKTransformableProtocol.h */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		0F0149231D93108B00FA60FF /* State */ = {
+			isa = PBXGroup;
+			children = (
+				0F0149241D93108B00FA60FF /* VAKSession.h */,
+				0F0149251D93108B00FA60FF /* VAKSession.m */,
+				0F0149261D93108B00FA60FF /* VAKState.h */,
+				0F0149271D93108B00FA60FF /* VAKState.m */,
+				0F0149281D93108B00FA60FF /* VAKStateFactory.h */,
+				0F0149291D93108B00FA60FF /* VAKStateFactory.m */,
+				0F01492A1D93108B00FA60FF /* VAKStateFactoryProtocol.h */,
+				0F01492B1D93108B00FA60FF /* VAKStateProtocol.h */,
+			);
+			path = State;
+			sourceTree = "<group>";
+		};
+		0F01492C1D93108B00FA60FF /* Touch */ = {
+			isa = PBXGroup;
+			children = (
+				0F01492D1D93108B00FA60FF /* VAKTouch.h */,
+				0F01492E1D93108B00FA60FF /* VAKTouch.m */,
+				0F01492F1D93108B00FA60FF /* VAKTouchCollection.h */,
+				0F0149301D93108B00FA60FF /* VAKTouchCollection.m */,
+			);
+			path = Touch;
+			sourceTree = "<group>";
+		};
+		0F0149361D93108B00FA60FF /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				0F0149371D93108B00FA60FF /* NSDate+VAKISOFormat.h */,
+				0F0149381D93108B00FA60FF /* NSDate+VAKISOFormat.m */,
+				0F0149391D93108B00FA60FF /* NSObject+VAKAspect.h */,
+				0F01493A1D93108B00FA60FF /* NSObject+VAKAspect.m */,
+				0F01493B1D93108B00FA60FF /* NSObject+VAKShortId.h */,
+				0F01493C1D93108B00FA60FF /* NSObject+VAKShortId.m */,
+				0F01493D1D93108B00FA60FF /* NSString+ReadableLevel.h */,
+				0F01493E1D93108B00FA60FF /* NSString+ReadableLevel.m */,
+				0F01493F1D93108B00FA60FF /* UITouch+VAKTransformable.h */,
+				0F0149401D93108B00FA60FF /* UITouch+VAKTransformable.m */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		0F0149411D93108B00FA60FF /* GUIResources */ = {
+			isa = PBXGroup;
+			children = (
+				0F0149421D93108B00FA60FF /* images */,
+			);
+			path = GUIResources;
+			sourceTree = "<group>";
+		};
+		0F0149421D93108B00FA60FF /* images */ = {
+			isa = PBXGroup;
+			children = (
+				0F0149431D93108B00FA60FF /* buttons */,
+				0F0149541D93108B00FA60FF /* layout */,
+				0F01495B1D93108B00FA60FF /* sources */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		0F0149431D93108B00FA60FF /* buttons */ = {
+			isa = PBXGroup;
+			children = (
+				0F0149441D93108B00FA60FF /* back.png */,
+				0F0149451D93108B00FA60FF /* back@2x.png */,
+				0F0149461D93108B00FA60FF /* back@3x.png */,
+				0F0149471D93108B00FA60FF /* close-dark.png */,
+				0F0149481D93108B00FA60FF /* close-dark@2x.png */,
+				0F0149491D93108B00FA60FF /* close-dark@3x.png */,
+				0F01494A1D93108B00FA60FF /* close-light.png */,
+				0F01494B1D93108B00FA60FF /* close-light@2x.png */,
+				0F01494C1D93108B00FA60FF /* close-light@3x.png */,
+				0F01494D1D93108B00FA60FF /* player */,
+			);
+			path = buttons;
+			sourceTree = "<group>";
+		};
+		0F01494D1D93108B00FA60FF /* player */ = {
+			isa = PBXGroup;
+			children = (
+				0F01494E1D93108B00FA60FF /* pause.png */,
+				0F01494F1D93108B00FA60FF /* pause@2x.png */,
+				0F0149501D93108B00FA60FF /* pause@3x.png */,
+				0F0149511D93108B00FA60FF /* play.png */,
+				0F0149521D93108B00FA60FF /* play@2x.png */,
+				0F0149531D93108B00FA60FF /* play@3x.png */,
+			);
+			path = player;
+			sourceTree = "<group>";
+		};
+		0F0149541D93108B00FA60FF /* layout */ = {
+			isa = PBXGroup;
+			children = (
+				0F0149551D93108B00FA60FF /* header.png */,
+				0F0149561D93108B00FA60FF /* header@2x.png */,
+				0F0149571D93108B00FA60FF /* header@3x.png */,
+				0F0149581D93108B00FA60FF /* hr.png */,
+				0F0149591D93108B00FA60FF /* hr@2x.png */,
+				0F01495A1D93108B00FA60FF /* hr@3x.png */,
+			);
+			path = layout;
+			sourceTree = "<group>";
+		};
+		0F01495B1D93108B00FA60FF /* sources */ = {
+			isa = PBXGroup;
+			children = (
+				0F01495C1D93108B00FA60FF /* couchbase-lite.png */,
+				0F01495D1D93108B00FA60FF /* couchbase-lite@2x.png */,
+				0F01495E1D93108B00FA60FF /* couchbase-lite@3x.png */,
+				0F01495F1D93108B00FA60FF /* json.png */,
+				0F0149601D93108B00FA60FF /* json@2x.png */,
+				0F0149611D93108B00FA60FF /* json@3x.png */,
+			);
+			path = sources;
+			sourceTree = "<group>";
+		};
+		0F0149621D93108B00FA60FF /* Log */ = {
+			isa = PBXGroup;
+			children = (
+				0F0149631D93108B00FA60FF /* Backend */,
+				0F0149691D93108B00FA60FF /* Builder */,
+				0F01496D1D93108B00FA60FF /* Filesystem */,
+				0F0149821D93108B00FA60FF /* Formatter */,
+				0F01498A1D93108B00FA60FF /* Generator */,
+				0F01498D1D93108B00FA60FF /* Keychain */,
+				0F0149901D93108B00FA60FF /* Manager */,
+				0F0149951D93108B00FA60FF /* Network */,
+				0F0149991D93108B00FA60FF /* Persistence */,
+				0F0149A51D93108B00FA60FF /* Serializer */,
+			);
+			path = Log;
+			sourceTree = "<group>";
+		};
+		0F0149631D93108B00FA60FF /* Backend */ = {
+			isa = PBXGroup;
+			children = (
+				0F0149641D93108B00FA60FF /* VAKBackend.h */,
+				0F0149651D93108B00FA60FF /* VAKBackend.m */,
+				0F0149661D93108B00FA60FF /* VAKBackendProtocol.h */,
+				0F0149671D93108B00FA60FF /* VAKCustomBackend.h */,
+				0F0149681D93108B00FA60FF /* VAKCustomBackend.m */,
+			);
+			path = Backend;
+			sourceTree = "<group>";
+		};
+		0F0149691D93108B00FA60FF /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+				0F01496A1D93108B00FA60FF /* VAKDefaultBuilder.h */,
+				0F01496B1D93108B00FA60FF /* VAKDefaultBuilder.m */,
+				0F01496C1D93108B00FA60FF /* VAKLogManagerBuilderProtocol.h */,
+			);
+			path = Builder;
+			sourceTree = "<group>";
+		};
+		0F01496D1D93108B00FA60FF /* Filesystem */ = {
+			isa = PBXGroup;
+			children = (
+				0F01496E1D93108B00FA60FF /* Helper */,
+				0F0149751D93108B00FA60FF /* Reader */,
+				0F0149791D93108B00FA60FF /* Writer */,
+			);
+			path = Filesystem;
+			sourceTree = "<group>";
+		};
+		0F01496E1D93108B00FA60FF /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				0F01496F1D93108B00FA60FF /* VAKAppSupportFilesystemHelper.h */,
+				0F0149701D93108B00FA60FF /* VAKAppSupportFilesystemHelper.m */,
+				0F0149711D93108B00FA60FF /* VAKFilesystemHelperBase.h */,
+				0F0149721D93108B00FA60FF /* VAKFilesystemHelperBase.m */,
+				0F0149731D93108B00FA60FF /* VAKLibraryFilesystemHelper.h */,
+				0F0149741D93108B00FA60FF /* VAKLibraryFilesystemHelper.m */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		0F0149751D93108B00FA60FF /* Reader */ = {
+			isa = PBXGroup;
+			children = (
+				0F0149761D93108B00FA60FF /* VAKAppSupportFileReader.h */,
+				0F0149771D93108B00FA60FF /* VAKAppSupportFileReader.m */,
+				0F0149781D93108B00FA60FF /* VAKFileReaderProtocol.h */,
+			);
+			path = Reader;
+			sourceTree = "<group>";
+		};
+		0F0149791D93108B00FA60FF /* Writer */ = {
+			isa = PBXGroup;
+			children = (
+				0F01497A1D93108B00FA60FF /* VAKAppSupportFileWriter.h */,
+				0F01497B1D93108B00FA60FF /* VAKAppSupportFileWriter.m */,
+				0F01497C1D93108B00FA60FF /* VAKFileWriterBase.h */,
+				0F01497D1D93108B00FA60FF /* VAKFileWriterBase.m */,
+				0F01497E1D93108B00FA60FF /* VAKFileWriterConstants.h */,
+				0F01497F1D93108B00FA60FF /* VAKFileWriterProtocol.h */,
+				0F0149801D93108B00FA60FF /* VAKLibraryFileWriter.h */,
+				0F0149811D93108B00FA60FF /* VAKLibraryFileWriter.m */,
+			);
+			path = Writer;
+			sourceTree = "<group>";
+		};
+		0F0149821D93108B00FA60FF /* Formatter */ = {
+			isa = PBXGroup;
+			children = (
+				0F0149831D93108B00FA60FF /* VAKDefaultFormatter.h */,
+				0F0149841D93108B00FA60FF /* VAKDefaultFormatter.m */,
+				0F0149851D93108B00FA60FF /* VAKFormatterProtocol.h */,
+				0F0149861D93108B00FA60FF /* VAKMatrixFormatter.h */,
+				0F0149871D93108B00FA60FF /* VAKMatrixFormatter.m */,
+				0F0149881D93108B00FA60FF /* VAKVectorFormatter.h */,
+				0F0149891D93108B00FA60FF /* VAKVectorFormatter.m */,
+			);
+			path = Formatter;
+			sourceTree = "<group>";
+		};
+		0F01498A1D93108B00FA60FF /* Generator */ = {
+			isa = PBXGroup;
+			children = (
+				0F01498B1D93108B00FA60FF /* VAKAliasGenerator.h */,
+				0F01498C1D93108B00FA60FF /* VAKAliasGenerator.m */,
+			);
+			path = Generator;
+			sourceTree = "<group>";
+		};
+		0F01498D1D93108B00FA60FF /* Keychain */ = {
+			isa = PBXGroup;
+			children = (
+				0F01498E1D93108B00FA60FF /* VAKKeyChain.h */,
+				0F01498F1D93108B00FA60FF /* VAKKeychain.m */,
+			);
+			path = Keychain;
+			sourceTree = "<group>";
+		};
+		0F0149901D93108B00FA60FF /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				0F0149911D93108B00FA60FF /* VAKLogManager.h */,
+				0F0149921D93108B00FA60FF /* VAKLogManager.m */,
+				0F0149931D93108B00FA60FF /* VAKLogRegistrationBroker.h */,
+				0F0149941D93108B00FA60FF /* VAKLogRegistrationBroker.m */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		0F0149951D93108B00FA60FF /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				0F0149961D93108B00FA60FF /* VAKNoopDispatcher.h */,
+				0F0149971D93108B00FA60FF /* VAKNoopDispatcher.m */,
+				0F0149981D93108B00FA60FF /* VAKRemoteDispatchProtocol.h */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		0F0149991D93108B00FA60FF /* Persistence */ = {
+			isa = PBXGroup;
+			children = (
+				0F01499A1D93108B00FA60FF /* Console */,
+				0F01499F1D93108B00FA60FF /* Json */,
+				0F0149A31D93108B00FA60FF /* VAKFileProviderProtocol.h */,
+				0F0149A41D93108B00FA60FF /* VAKPersistenceProviderProtocol.h */,
+			);
+			path = Persistence;
+			sourceTree = "<group>";
+		};
+		0F01499A1D93108B00FA60FF /* Console */ = {
+			isa = PBXGroup;
+			children = (
+				0F01499B1D93108B00FA60FF /* VAKConsoleProvider.h */,
+				0F01499C1D93108B00FA60FF /* VAKConsoleProvider.m */,
+				0F01499D1D93108B00FA60FF /* VAKNSLogProvider.h */,
+				0F01499E1D93108B00FA60FF /* VAKNSLogProvider.m */,
+			);
+			path = Console;
+			sourceTree = "<group>";
+		};
+		0F01499F1D93108B00FA60FF /* Json */ = {
+			isa = PBXGroup;
+			children = (
+				0F0149A01D93108B00FA60FF /* VAKJsonFileProvider.h */,
+				0F0149A11D93108B00FA60FF /* VAKJsonFileProvider.m */,
+				0F0149A21D93108B00FA60FF /* VAKJsonProviderProtocol.h */,
+			);
+			path = Json;
+			sourceTree = "<group>";
+		};
+		0F0149A51D93108B00FA60FF /* Serializer */ = {
+			isa = PBXGroup;
+			children = (
+				0F0149A61D93108B00FA60FF /* VAKSerializableProtocol.h */,
+			);
+			path = Serializer;
+			sourceTree = "<group>";
+		};
+		0F0149A71D93108B00FA60FF /* Prov */ = {
+			isa = PBXGroup;
+			children = (
+				0F0149A81D93108B00FA60FF /* Factory */,
+				0F0149AF1D93108B00FA60FF /* Relation */,
+				0F0149BE1D93108B00FA60FF /* Type */,
+				0F0149C71D93108B00FA60FF /* Utils */,
+				0F0149CA1D93108B00FA60FF /* VAKProv.h */,
+				0F0149CB1D93108B00FA60FF /* VAKProv.m */,
+				0F0149CC1D93108B00FA60FF /* VAKProvBase.h */,
+				0F0149CD1D93108B00FA60FF /* VAKProvBase.m */,
+				0F0149CE1D93108B00FA60FF /* VAKProvType.h */,
+				0F0149CF1D93108B00FA60FF /* VAKProvType.m */,
+				0F0149D01D93108B00FA60FF /* ValueObject */,
+			);
+			path = Prov;
+			sourceTree = "<group>";
+		};
+		0F0149A81D93108B00FA60FF /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				0F0149A91D93108B00FA60FF /* VAKProvFactory.h */,
+				0F0149AA1D93108B00FA60FF /* VAKProvFactory.m */,
+				0F0149AB1D93108B00FA60FF /* VAKProvSessionFactory.h */,
+				0F0149AC1D93108B00FA60FF /* VAKProvSessionFactory.m */,
+				0F0149AD1D93108B00FA60FF /* VAKProvStateFactory.h */,
+				0F0149AE1D93108B00FA60FF /* VAKProvStateFactory.m */,
+			);
+			path = Factory;
+			sourceTree = "<group>";
+		};
+		0F0149AF1D93108B00FA60FF /* Relation */ = {
+			isa = PBXGroup;
+			children = (
+				0F0149B01D93108B00FA60FF /* VAKProvAssociation.h */,
+				0F0149B11D93108B00FA60FF /* VAKProvAssociation.m */,
+				0F0149B21D93108B00FA60FF /* VAKProvAttribution.h */,
+				0F0149B31D93108B00FA60FF /* VAKProvAttribution.m */,
+				0F0149B41D93108B00FA60FF /* VAKProvDelegation.h */,
+				0F0149B51D93108B00FA60FF /* VAKProvDelegation.m */,
+				0F0149B61D93108B00FA60FF /* VAKProvDerivation.h */,
+				0F0149B71D93108B00FA60FF /* VAKProvDerivation.m */,
+				0F0149B81D93108B00FA60FF /* VAKProvGeneration.h */,
+				0F0149B91D93108B00FA60FF /* VAKProvGeneration.m */,
+				0F0149BA1D93108B00FA60FF /* VAKProvRevision.h */,
+				0F0149BB1D93108B00FA60FF /* VAKProvRevision.m */,
+				0F0149BC1D93108B00FA60FF /* VAKProvUsage.h */,
+				0F0149BD1D93108B00FA60FF /* VAKProvUsage.m */,
+			);
+			path = Relation;
+			sourceTree = "<group>";
+		};
+		0F0149BE1D93108B00FA60FF /* Type */ = {
+			isa = PBXGroup;
+			children = (
+				0F0149BF1D93108B00FA60FF /* VAKProvActivity.h */,
+				0F0149C01D93108B00FA60FF /* VAKProvActivity.m */,
+				0F0149C11D93108B00FA60FF /* VAKProvDelegatingSoftwareAgent.h */,
+				0F0149C21D93108B00FA60FF /* VAKProvDelegatingSoftwareAgent.m */,
+				0F0149C31D93108B00FA60FF /* VAKProvEntity.h */,
+				0F0149C41D93108B00FA60FF /* VAKProvEntity.m */,
+				0F0149C51D93108B00FA60FF /* VAKProvWritingSoftwareAgent.h */,
+				0F0149C61D93108B00FA60FF /* VAKProvWritingSoftwareAgent.m */,
+			);
+			path = Type;
+			sourceTree = "<group>";
+		};
+		0F0149C71D93108B00FA60FF /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				0F0149C81D93108B00FA60FF /* VAKProvKeys.h */,
+				0F0149C91D93108B00FA60FF /* VAKProvKeys.m */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		0F0149D01D93108B00FA60FF /* ValueObject */ = {
+			isa = PBXGroup;
+			children = (
+				0F0149D11D93108B00FA60FF /* VAKScreenInfo.h */,
+				0F0149D21D93108B00FA60FF /* VAKScreenInfo.m */,
+			);
+			path = ValueObject;
+			sourceTree = "<group>";
+		};
+		0F0149D31D93108B00FA60FF /* Replay */ = {
+			isa = PBXGroup;
+			children = (
+				0F0149D41D93108B00FA60FF /* Controllers */,
+				0F0149EC1D93108B00FA60FF /* Duration */,
+				0F0149EF1D93108B00FA60FF /* Handlers */,
+				0F0149F51D93108B00FA60FF /* Manager */,
+				0F014A071D93108B00FA60FF /* Player */,
+				0F014A081D93108B00FA60FF /* VAKInjectableTouchHandlerProtocol.h */,
+				0F014A091D93108B00FA60FF /* Visualize */,
+			);
+			path = Replay;
+			sourceTree = "<group>";
+		};
+		0F0149D41D93108B00FA60FF /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				0F0149D51D93108B00FA60FF /* Replay */,
+				0F0149D81D93108B00FA60FF /* SessionSelection */,
+				0F0149DD1D93108B00FA60FF /* SourceSelection */,
+				0F0149E21D93108B00FA60FF /* VAKBaseSelectionViewController.h */,
+				0F0149E31D93108B00FA60FF /* VAKBaseSelectionViewController.m */,
+				0F0149E41D93108B00FA60FF /* View */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		0F0149D51D93108B00FA60FF /* Replay */ = {
+			isa = PBXGroup;
+			children = (
+				0F0149D61D93108B00FA60FF /* VAKReplayViewController.h */,
+				0F0149D71D93108B00FA60FF /* VAKReplayViewController.m */,
+			);
+			path = Replay;
+			sourceTree = "<group>";
+		};
+		0F0149D81D93108B00FA60FF /* SessionSelection */ = {
+			isa = PBXGroup;
+			children = (
+				0F0149D91D93108B00FA60FF /* VAKSessionSelectionViewController.h */,
+				0F0149DA1D93108B00FA60FF /* VAKSessionSelectionViewController.m */,
+				0F0149DB1D93108B00FA60FF /* VAKSessionViewCell.h */,
+				0F0149DC1D93108B00FA60FF /* VAKSessionViewCell.m */,
+			);
+			path = SessionSelection;
+			sourceTree = "<group>";
+		};
+		0F0149DD1D93108B00FA60FF /* SourceSelection */ = {
+			isa = PBXGroup;
+			children = (
+				0F0149DE1D93108B00FA60FF /* VAKSourceSelectionViewController.h */,
+				0F0149DF1D93108B00FA60FF /* VAKSourceSelectionViewController.m */,
+				0F0149E01D93108B00FA60FF /* VAKSourceViewCell.h */,
+				0F0149E11D93108B00FA60FF /* VAKSourceViewCell.m */,
+			);
+			path = SourceSelection;
+			sourceTree = "<group>";
+		};
+		0F0149E41D93108B00FA60FF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0F0149E51D93108B00FA60FF /* VAKBaseReplayView.h */,
+				0F0149E61D93108B00FA60FF /* VAKBaseReplayView.m */,
+				0F0149E71D93108B00FA60FF /* VAKReplayHeader.h */,
+				0F0149E81D93108B00FA60FF /* VAKReplayHeader.m */,
+				0F0149E91D93108B00FA60FF /* VAKReplayPlayerView.h */,
+				0F0149EA1D93108B00FA60FF /* VAKReplayPlayerView.m */,
+				0F0149EB1D93108B00FA60FF /* VAKReplayViewHelper.h */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0F0149EC1D93108B00FA60FF /* Duration */ = {
+			isa = PBXGroup;
+			children = (
+				0F0149ED1D93108B00FA60FF /* VAKDurationCalculator.h */,
+				0F0149EE1D93108B00FA60FF /* VAKDurationCalculator.m */,
+			);
+			path = Duration;
+			sourceTree = "<group>";
+		};
+		0F0149EF1D93108B00FA60FF /* Handlers */ = {
+			isa = PBXGroup;
+			children = (
+				0F0149F01D93108B00FA60FF /* VAKReplayTagHandlerProtocol.h */,
+				0F0149F11D93108B00FA60FF /* VAKReplayTouchTagHandler.h */,
+				0F0149F21D93108B00FA60FF /* VAKReplayTouchTagHandler.m */,
+				0F0149F31D93108B00FA60FF /* VAKReplayViewTagHandler.h */,
+				0F0149F41D93108B00FA60FF /* VAKReplayViewTagHandler.m */,
+			);
+			path = Handlers;
+			sourceTree = "<group>";
+		};
+		0F0149F51D93108B00FA60FF /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				0F0149F61D93108B00FA60FF /* StateSelection */,
+				0F014A051D93108B00FA60FF /* VAKReplayManager.h */,
+				0F014A061D93108B00FA60FF /* VAKReplayManager.m */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		0F0149F61D93108B00FA60FF /* StateSelection */ = {
+			isa = PBXGroup;
+			children = (
+				0F0149F71D93108B00FA60FF /* VAKStateBaseSelection.h */,
+				0F0149F81D93108B00FA60FF /* VAKStateBaseSelection.m */,
+				0F0149F91D93108B00FA60FF /* VAKStateControllerSelection.h */,
+				0F0149FA1D93108B00FA60FF /* VAKStateControllerSelection.m */,
+				0F0149FB1D93108B00FA60FF /* VAKStateCustomSelection.h */,
+				0F0149FC1D93108B00FA60FF /* VAKStateCustomSelection.m */,
+				0F0149FD1D93108B00FA60FF /* VAKStateDoneSelection.h */,
+				0F0149FE1D93108B00FA60FF /* VAKStateDoneSelection.m */,
+				0F0149FF1D93108B00FA60FF /* VAKStateKeyframeSelection.h */,
+				0F014A001D93108B00FA60FF /* VAKStateKeyframeSelection.m */,
+				0F014A011D93108B00FA60FF /* VAKStateSettingsSelection.h */,
+				0F014A021D93108B00FA60FF /* VAKStateSettingsSelection.m */,
+				0F014A031D93108B00FA60FF /* VAKStateTouchSelection.h */,
+				0F014A041D93108B00FA60FF /* VAKStateTouchSelection.m */,
+			);
+			path = StateSelection;
+			sourceTree = "<group>";
+		};
+		0F014A071D93108B00FA60FF /* Player */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Player;
+			sourceTree = "<group>";
+		};
+		0F014A091D93108B00FA60FF /* Visualize */ = {
+			isa = PBXGroup;
+			children = (
+				0F014A0A1D93108B00FA60FF /* VAKTouchVisualizer.h */,
+				0F014A0B1D93108B00FA60FF /* VAKTouchVisualizer.m */,
+			);
+			path = Visualize;
+			sourceTree = "<group>";
+		};
+		0F014A0C1D93108B00FA60FF /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				0F014A0D1D93108B00FA60FF /* VAKConstants.h */,
+				0F014A0E1D93108B00FA60FF /* VAKConstants.m */,
+				0F014A0F1D93108B00FA60FF /* VAKMacros.h */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		0F014AD51D9310C900FA60FF /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				0F014AD61D9310C900FA60FF /* VAKAbstractModelSpec.m */,
+				0F014AD71D9310C900FA60FF /* VAKStateFactorySpec.m */,
+				0F014AD81D9310C900FA60FF /* VAKStateSessionSpec.m */,
+				0F014AD91D9310C900FA60FF /* VAKStateSpec.m */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		0F014ADA1D9310C900FA60FF /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				0F014ADB1D9310C900FA60FF /* NSDate+VAKISOFormatSpec.m */,
+				0F014ADC1D9310C900FA60FF /* NSString+ReadableLevelSpec.m */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		0F014ADD1D9310C900FA60FF /* Integration */ = {
+			isa = PBXGroup;
+			children = (
+				0F014ADE1D9310C900FA60FF /* VAKStateIntegrationSpec.m */,
+			);
+			path = Integration;
+			sourceTree = "<group>";
+		};
+		0F014ADF1D9310C900FA60FF /* Prov */ = {
+			isa = PBXGroup;
+			children = (
+				0F014AE01D9310C900FA60FF /* Relation */,
+				0F014AE81D9310C900FA60FF /* Type */,
+				0F014AED1D9310C900FA60FF /* VAKProvBaseSpec.m */,
+				0F014AEE1D9310C900FA60FF /* VAKProvSpec.m */,
+				0F014AEF1D9310C900FA60FF /* VAKProvTypeSpec.m */,
+			);
+			path = Prov;
+			sourceTree = "<group>";
+		};
+		0F014AE01D9310C900FA60FF /* Relation */ = {
+			isa = PBXGroup;
+			children = (
+				0F014AE11D9310C900FA60FF /* VAKProvAssociationSpec.m */,
+				0F014AE21D9310C900FA60FF /* VAKProvAttributionSpec.m */,
+				0F014AE31D9310C900FA60FF /* VAKProvDelegationSpec.m */,
+				0F014AE41D9310C900FA60FF /* VAKProvDerivationSpec.m */,
+				0F014AE51D9310C900FA60FF /* VAKProvGenerationSpec.m */,
+				0F014AE61D9310C900FA60FF /* VAKProvRevisionSpec.m */,
+				0F014AE71D9310C900FA60FF /* VAKProvUsageSpec.m */,
+			);
+			path = Relation;
+			sourceTree = "<group>";
+		};
+		0F014AE81D9310C900FA60FF /* Type */ = {
+			isa = PBXGroup;
+			children = (
+				0F014AE91D9310C900FA60FF /* VAKProvActivitySpec.m */,
+				0F014AEA1D9310C900FA60FF /* VAKProvDelegatingSoftwareAgentSpec.m */,
+				0F014AEB1D9310C900FA60FF /* VAKProvEntitySpec.m */,
+				0F014AEC1D9310C900FA60FF /* VAKProvWritingSoftwareAgentSpec.m */,
+			);
+			path = Type;
+			sourceTree = "<group>";
+		};
+		0F014AF01D9310C900FA60FF /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				0F014AF11D9310C900FA60FF /* Backend */,
+				0F014AF41D9310C900FA60FF /* Builder */,
+				0F014AF61D9310C900FA60FF /* Duration */,
+				0F014AF81D9310C900FA60FF /* Filesystem */,
+				0F014AFC1D9310C900FA60FF /* Keychain */,
+				0F014AFE1D9310CA00FA60FF /* Log */,
+				0F014B011D9310CA00FA60FF /* Network */,
+				0F014B031D9310CA00FA60FF /* Persistence */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		0F014AF11D9310C900FA60FF /* Backend */ = {
+			isa = PBXGroup;
+			children = (
+				0F014AF21D9310C900FA60FF /* VAKBackendSpec.m */,
+				0F014AF31D9310C900FA60FF /* VAKCustomBackendSpec.m */,
+			);
+			path = Backend;
+			sourceTree = "<group>";
+		};
+		0F014AF41D9310C900FA60FF /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+				0F014AF51D9310C900FA60FF /* VAKLoggerManagerBuilderSpec.m */,
+			);
+			path = Builder;
+			sourceTree = "<group>";
+		};
+		0F014AF61D9310C900FA60FF /* Duration */ = {
+			isa = PBXGroup;
+			children = (
+				0F014AF71D9310C900FA60FF /* VAKDurationCalculatorSpec.m */,
+			);
+			path = Duration;
+			sourceTree = "<group>";
+		};
+		0F014AF81D9310C900FA60FF /* Filesystem */ = {
+			isa = PBXGroup;
+			children = (
+				0F014AF91D9310C900FA60FF /* VAKFileReaderSpec.m */,
+				0F014AFA1D9310C900FA60FF /* VAKFilesystemHelperSpec.m */,
+				0F014AFB1D9310C900FA60FF /* VAKLibraryFileWriterSpec.m */,
+			);
+			path = Filesystem;
+			sourceTree = "<group>";
+		};
+		0F014AFC1D9310C900FA60FF /* Keychain */ = {
+			isa = PBXGroup;
+			children = (
+				0F014AFD1D9310CA00FA60FF /* VAKKeychainSpec.m */,
+			);
+			path = Keychain;
+			sourceTree = "<group>";
+		};
+		0F014AFE1D9310CA00FA60FF /* Log */ = {
+			isa = PBXGroup;
+			children = (
+				0F014AFF1D9310CA00FA60FF /* VAKLogManagerSpec.m */,
+				0F014B001D9310CA00FA60FF /* VAKLogRegistrationBrokerSpec.m */,
+			);
+			path = Log;
+			sourceTree = "<group>";
+		};
+		0F014B011D9310CA00FA60FF /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				0F014B021D9310CA00FA60FF /* VAKNoopDispatcherSpec.m */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		0F014B031D9310CA00FA60FF /* Persistence */ = {
+			isa = PBXGroup;
+			children = (
+				0F014B041D9310CA00FA60FF /* Console */,
+				0F014B071D9310CA00FA60FF /* Json */,
+			);
+			path = Persistence;
+			sourceTree = "<group>";
+		};
+		0F014B041D9310CA00FA60FF /* Console */ = {
+			isa = PBXGroup;
+			children = (
+				0F014B051D9310CA00FA60FF /* VAKConsoleProviderSpec.m */,
+				0F014B061D9310CA00FA60FF /* VAKNSLogProviderSpec.m */,
+			);
+			path = Console;
+			sourceTree = "<group>";
+		};
+		0F014B071D9310CA00FA60FF /* Json */ = {
+			isa = PBXGroup;
+			children = (
+				0F014B081D9310CA00FA60FF /* VAKJsonFileProviderSpec.m */,
+			);
+			path = Json;
+			sourceTree = "<group>";
+		};
+		0F014B2C1D93113C00FA60FF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0F014B5D1D93128100FA60FF /* Specta.xcodeproj */,
+				0F014B481D93127100FA60FF /* OCMock.xcodeproj */,
+				0F014B2D1D93126200FA60FF /* Expecta.xcodeproj */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		0F014B2E1D93126200FA60FF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0F014B391D93126200FA60FF /* Expecta.framework */,
+				0F014B3B1D93126200FA60FF /* Expecta.framework */,
+				0F014B3D1D93126200FA60FF /* ExpectaTests.xctest */,
+				0F014B3F1D93126200FA60FF /* Expecta-iOSTests.xctest */,
+				0F014B411D93126200FA60FF /* libExpecta.a */,
+				0F014B431D93126200FA60FF /* libExpecta.a */,
+				0F014B451D93126200FA60FF /* libExpectaTests.xctest */,
+				0F014B471D93126200FA60FF /* libExpecta-iOSTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0F014B491D93127100FA60FF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0F014B521D93127100FA60FF /* OCMock.framework */,
+				0F014B541D93127100FA60FF /* OCMockTests.xctest */,
+				0F014B561D93127100FA60FF /* libOCMock.a */,
+				0F014B581D93127100FA60FF /* OCMockLibTests.xctest */,
+				0F014B5A1D93127100FA60FF /* OCMock.framework */,
+				0F014B5C1D93127100FA60FF /* OCMock.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0F014B5E1D93128100FA60FF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0F014B671D93128100FA60FF /* Specta.framework */,
+				0F014B691D93128100FA60FF /* SpectaTests.xctest */,
+				0F014B6B1D93128100FA60FF /* Specta.framework */,
+				0F014B6D1D93128100FA60FF /* Specta-iOSTests.xctest */,
+				0F014B6F1D93128100FA60FF /* libSpecta.a */,
+				0F014B711D93128100FA60FF /* libSpecta.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0F0149021D93105E00FA60FF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F014A601D93108B00FA60FF /* VAKLibraryFileWriter.h in Headers */,
+				0F014A5A1D93108B00FA60FF /* VAKAppSupportFileWriter.h in Headers */,
+				0F014AB41D93108B00FA60FF /* VAKReplayPlayerView.h in Headers */,
+				0F014AC81D93108B00FA60FF /* VAKStateSettingsSelection.h in Headers */,
+				0F014A2C1D93108B00FA60FF /* UITouch+VAKTransformable.h in Headers */,
+				0F014ABE1D93108B00FA60FF /* VAKStateBaseSelection.h in Headers */,
+				0F014A511D93108B00FA60FF /* VAKAppSupportFilesystemHelper.h in Headers */,
+				0F014A861D93108B00FA60FF /* VAKProvAttribution.h in Headers */,
+				0F014ACE1D93108B00FA60FF /* VAKInjectableTouchHandlerProtocol.h in Headers */,
+				0F014A4E1D93108B00FA60FF /* VAKDefaultBuilder.h in Headers */,
+				0F014AC01D93108B00FA60FF /* VAKStateControllerSelection.h in Headers */,
+				0F014A501D93108B00FA60FF /* VAKLogManagerBuilderProtocol.h in Headers */,
+				0F014A7B1D93108B00FA60FF /* VAKFileProviderProtocol.h in Headers */,
+				0F014A9A1D93108B00FA60FF /* VAKProvKeys.h in Headers */,
+				0F014A231D93108B00FA60FF /* VAKTransformableProtocol.h in Headers */,
+				0F014AA01D93108B00FA60FF /* VAKProvType.h in Headers */,
+				0F014AB21D93108B00FA60FF /* VAKReplayHeader.h in Headers */,
+				0F014AD41D93108B00FA60FF /* VisAnalyticsKit.h in Headers */,
+				0F014A261D93108B00FA60FF /* NSObject+VAKAspect.h in Headers */,
+				0F014A9C1D93108B00FA60FF /* VAKProv.h in Headers */,
+				0F014A821D93108B00FA60FF /* VAKProvStateFactory.h in Headers */,
+				0F014A1F1D93108B00FA60FF /* VAKAbstractModel.h in Headers */,
+				0F014A131D93108B00FA60FF /* VAKSession.h in Headers */,
+				0F014AA81D93108B00FA60FF /* VAKSessionViewCell.h in Headers */,
+				0F014A151D93108B00FA60FF /* VAKState.h in Headers */,
+				0F014A6B1D93108B00FA60FF /* VAKKeyChain.h in Headers */,
+				0F014AB71D93108B00FA60FF /* VAKDurationCalculator.h in Headers */,
+				0F014A171D93108B00FA60FF /* VAKStateFactory.h in Headers */,
+				0F014A841D93108B00FA60FF /* VAKProvAssociation.h in Headers */,
+				0F014A1D1D93108B00FA60FF /* VAKTouchCollection.h in Headers */,
+				0F014A491D93108B00FA60FF /* VAKBackend.h in Headers */,
+				0F014A571D93108B00FA60FF /* VAKAppSupportFileReader.h in Headers */,
+				0F014A281D93108B00FA60FF /* NSObject+VAKShortId.h in Headers */,
+				0F014A941D93108B00FA60FF /* VAKProvDelegatingSoftwareAgent.h in Headers */,
+				0F014A981D93108B00FA60FF /* VAKProvWritingSoftwareAgent.h in Headers */,
+				0F014AB91D93108B00FA60FF /* VAKReplayTagHandlerProtocol.h in Headers */,
+				0F014A921D93108B00FA60FF /* VAKProvActivity.h in Headers */,
+				0F014A5C1D93108B00FA60FF /* VAKFileWriterBase.h in Headers */,
+				0F014A1B1D93108B00FA60FF /* VAKTouch.h in Headers */,
+				0F014AC41D93108B00FA60FF /* VAKStateDoneSelection.h in Headers */,
+				0F014A7C1D93108B00FA60FF /* VAKPersistenceProviderProtocol.h in Headers */,
+				0F014A641D93108B00FA60FF /* VAKFormatterProtocol.h in Headers */,
+				0F014A591D93108B00FA60FF /* VAKFileReaderProtocol.h in Headers */,
+				0F014A901D93108B00FA60FF /* VAKProvUsage.h in Headers */,
+				0F014A961D93108B00FA60FF /* VAKProvEntity.h in Headers */,
+				0F014AB01D93108B00FA60FF /* VAKBaseReplayView.h in Headers */,
+				0F014A691D93108B00FA60FF /* VAKAliasGenerator.h in Headers */,
+				0F014A5E1D93108B00FA60FF /* VAKFileWriterConstants.h in Headers */,
+				0F014AD11D93108B00FA60FF /* VAKConstants.h in Headers */,
+				0F014A7E1D93108B00FA60FF /* VAKProvFactory.h in Headers */,
+				0F014A2A1D93108B00FA60FF /* NSString+ReadableLevel.h in Headers */,
+				0F014A5F1D93108B00FA60FF /* VAKFileWriterProtocol.h in Headers */,
+				0F014A731D93108B00FA60FF /* VAKRemoteDispatchProtocol.h in Headers */,
+				0F014ACC1D93108B00FA60FF /* VAKReplayManager.h in Headers */,
+				0F014A7D1D93108B00FA60FF /* VAKSerializableProtocol.h in Headers */,
+				0F014A4B1D93108B00FA60FF /* VAKBackendProtocol.h in Headers */,
+				0F014AA41D93108B00FA60FF /* VAKReplayViewController.h in Headers */,
+				0F014A191D93108B00FA60FF /* VAKStateFactoryProtocol.h in Headers */,
+				0F014A531D93108B00FA60FF /* VAKFilesystemHelperBase.h in Headers */,
+				0F014AAE1D93108B00FA60FF /* VAKBaseSelectionViewController.h in Headers */,
+				0F014A6F1D93108B00FA60FF /* VAKLogRegistrationBroker.h in Headers */,
+				0F014A621D93108B00FA60FF /* VAKDefaultFormatter.h in Headers */,
+				0F014AAA1D93108B00FA60FF /* VAKSourceSelectionViewController.h in Headers */,
+				0F014A9E1D93108B00FA60FF /* VAKProvBase.h in Headers */,
+				0F014A111D93108B00FA60FF /* Aspects.h in Headers */,
+				0F014A7A1D93108B00FA60FF /* VAKJsonProviderProtocol.h in Headers */,
+				0F014A881D93108B00FA60FF /* VAKProvDelegation.h in Headers */,
+				0F014ABC1D93108B00FA60FF /* VAKReplayViewTagHandler.h in Headers */,
+				0F014A551D93108B00FA60FF /* VAKLibraryFilesystemHelper.h in Headers */,
+				0F014A801D93108B00FA60FF /* VAKProvSessionFactory.h in Headers */,
+				0F014A711D93108B00FA60FF /* VAKNoopDispatcher.h in Headers */,
+				0F014AD31D93108B00FA60FF /* VAKMacros.h in Headers */,
+				0F014A241D93108B00FA60FF /* NSDate+VAKISOFormat.h in Headers */,
+				0F014A8C1D93108B00FA60FF /* VAKProvGeneration.h in Headers */,
+				0F014A211D93108B00FA60FF /* VAKPersistableProtocol.h in Headers */,
+				0F014ACA1D93108B00FA60FF /* VAKStateTouchSelection.h in Headers */,
+				0F014AB61D93108B00FA60FF /* VAKReplayViewHelper.h in Headers */,
+				0F014A8E1D93108B00FA60FF /* VAKProvRevision.h in Headers */,
+				0F014A781D93108B00FA60FF /* VAKJsonFileProvider.h in Headers */,
+				0F014AC61D93108B00FA60FF /* VAKStateKeyframeSelection.h in Headers */,
+				0F014ACF1D93108B00FA60FF /* VAKTouchVisualizer.h in Headers */,
+				0F014A761D93108B00FA60FF /* VAKNSLogProvider.h in Headers */,
+				0F014AAC1D93108B00FA60FF /* VAKSourceViewCell.h in Headers */,
+				0F014A741D93108B00FA60FF /* VAKConsoleProvider.h in Headers */,
+				0F014A4C1D93108B00FA60FF /* VAKCustomBackend.h in Headers */,
+				0F014ABA1D93108B00FA60FF /* VAKReplayTouchTagHandler.h in Headers */,
+				0F014A221D93108B00FA60FF /* VAKTaggableProtocol.h in Headers */,
+				0F014A651D93108B00FA60FF /* VAKMatrixFormatter.h in Headers */,
+				0F014A1A1D93108B00FA60FF /* VAKStateProtocol.h in Headers */,
+				0F014A671D93108B00FA60FF /* VAKVectorFormatter.h in Headers */,
+				0F014A6D1D93108B00FA60FF /* VAKLogManager.h in Headers */,
+				0F014A8A1D93108B00FA60FF /* VAKProvDerivation.h in Headers */,
+				0F014AA61D93108B00FA60FF /* VAKSessionSelectionViewController.h in Headers */,
+				0F014AA21D93108B00FA60FF /* VAKScreenInfo.h in Headers */,
+				0F014AC21D93108B00FA60FF /* VAKStateCustomSelection.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0F0149041D93105E00FA60FF /* VisAnalyticsKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0F0149191D93105F00FA60FF /* Build configuration list for PBXNativeTarget "VisAnalyticsKit" */;
+			buildPhases = (
+				0F0149001D93105E00FA60FF /* Sources */,
+				0F0149011D93105E00FA60FF /* Frameworks */,
+				0F0149021D93105E00FA60FF /* Headers */,
+				0F0149031D93105E00FA60FF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VisAnalyticsKit;
+			productName = VisAnalyticsKit;
+			productReference = 0F0149051D93105E00FA60FF /* VisAnalyticsKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		0F01490E1D93105F00FA60FF /* VisAnalyticsKitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0F01491C1D93105F00FA60FF /* Build configuration list for PBXNativeTarget "VisAnalyticsKitTests" */;
+			buildPhases = (
+				0F01490B1D93105F00FA60FF /* Sources */,
+				0F01490C1D93105F00FA60FF /* Frameworks */,
+				0F01490D1D93105F00FA60FF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0F0149121D93105F00FA60FF /* PBXTargetDependency */,
+			);
+			name = VisAnalyticsKitTests;
+			productName = VisAnalyticsKitTests;
+			productReference = 0F01490F1D93105F00FA60FF /* VisAnalyticsKitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0F0148FC1D93105E00FA60FF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = VisAnalyticsKit;
+				TargetAttributes = {
+					0F0149041D93105E00FA60FF = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 27G79Y8F56;
+					};
+					0F01490E1D93105F00FA60FF = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 27G79Y8F56;
+					};
+				};
+			};
+			buildConfigurationList = 0F0148FF1D93105E00FA60FF /* Build configuration list for PBXProject "VisAnalyticsKit" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 0F0148FB1D93105E00FA60FF;
+			productRefGroup = 0F0149061D93105E00FA60FF /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 0F014B2E1D93126200FA60FF /* Products */;
+					ProjectRef = 0F014B2D1D93126200FA60FF /* Expecta.xcodeproj */;
+				},
+				{
+					ProductGroup = 0F014B491D93127100FA60FF /* Products */;
+					ProjectRef = 0F014B481D93127100FA60FF /* OCMock.xcodeproj */;
+				},
+				{
+					ProductGroup = 0F014B5E1D93128100FA60FF /* Products */;
+					ProjectRef = 0F014B5D1D93128100FA60FF /* Specta.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				0F0149041D93105E00FA60FF /* VisAnalyticsKit */,
+				0F01490E1D93105F00FA60FF /* VisAnalyticsKitTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		0F014B391D93126200FA60FF /* Expecta.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Expecta.framework;
+			remoteRef = 0F014B381D93126200FA60FF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0F014B3B1D93126200FA60FF /* Expecta.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Expecta.framework;
+			remoteRef = 0F014B3A1D93126200FA60FF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0F014B3D1D93126200FA60FF /* ExpectaTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ExpectaTests.xctest;
+			remoteRef = 0F014B3C1D93126200FA60FF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0F014B3F1D93126200FA60FF /* Expecta-iOSTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Expecta-iOSTests.xctest";
+			remoteRef = 0F014B3E1D93126200FA60FF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0F014B411D93126200FA60FF /* libExpecta.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libExpecta.a;
+			remoteRef = 0F014B401D93126200FA60FF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0F014B431D93126200FA60FF /* libExpecta.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libExpecta.a;
+			remoteRef = 0F014B421D93126200FA60FF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0F014B451D93126200FA60FF /* libExpectaTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = libExpectaTests.xctest;
+			remoteRef = 0F014B441D93126200FA60FF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0F014B471D93126200FA60FF /* libExpecta-iOSTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "libExpecta-iOSTests.xctest";
+			remoteRef = 0F014B461D93126200FA60FF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0F014B521D93127100FA60FF /* OCMock.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = OCMock.framework;
+			remoteRef = 0F014B511D93127100FA60FF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0F014B541D93127100FA60FF /* OCMockTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = OCMockTests.xctest;
+			remoteRef = 0F014B531D93127100FA60FF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0F014B561D93127100FA60FF /* libOCMock.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libOCMock.a;
+			remoteRef = 0F014B551D93127100FA60FF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0F014B581D93127100FA60FF /* OCMockLibTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = OCMockLibTests.xctest;
+			remoteRef = 0F014B571D93127100FA60FF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0F014B5A1D93127100FA60FF /* OCMock.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = OCMock.framework;
+			remoteRef = 0F014B591D93127100FA60FF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0F014B5C1D93127100FA60FF /* OCMock.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = OCMock.framework;
+			remoteRef = 0F014B5B1D93127100FA60FF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0F014B671D93128100FA60FF /* Specta.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Specta.framework;
+			remoteRef = 0F014B661D93128100FA60FF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0F014B691D93128100FA60FF /* SpectaTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SpectaTests.xctest;
+			remoteRef = 0F014B681D93128100FA60FF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0F014B6B1D93128100FA60FF /* Specta.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Specta.framework;
+			remoteRef = 0F014B6A1D93128100FA60FF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0F014B6D1D93128100FA60FF /* Specta-iOSTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Specta-iOSTests.xctest";
+			remoteRef = 0F014B6C1D93128100FA60FF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0F014B6F1D93128100FA60FF /* libSpecta.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libSpecta.a;
+			remoteRef = 0F014B6E1D93128100FA60FF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0F014B711D93128100FA60FF /* libSpecta.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libSpecta.a;
+			remoteRef = 0F014B701D93128100FA60FF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0F0149031D93105E00FA60FF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F014A3F1D93108B00FA60FF /* header@3x.png in Resources */,
+				0F014A3B1D93108B00FA60FF /* play@2x.png in Resources */,
+				0F014A401D93108B00FA60FF /* hr.png in Resources */,
+				0F014A3E1D93108B00FA60FF /* header@2x.png in Resources */,
+				0F014A411D93108B00FA60FF /* hr@2x.png in Resources */,
+				0F014A331D93108B00FA60FF /* close-dark@3x.png in Resources */,
+				0F014A2E1D93108B00FA60FF /* back.png in Resources */,
+				0F014A431D93108B00FA60FF /* couchbase-lite.png in Resources */,
+				0F014A371D93108B00FA60FF /* pause.png in Resources */,
+				0F014A351D93108B00FA60FF /* close-light@2x.png in Resources */,
+				0F014A391D93108B00FA60FF /* pause@3x.png in Resources */,
+				0F014A3D1D93108B00FA60FF /* header.png in Resources */,
+				0F014A471D93108B00FA60FF /* json@2x.png in Resources */,
+				0F014A481D93108B00FA60FF /* json@3x.png in Resources */,
+				0F014A2F1D93108B00FA60FF /* back@2x.png in Resources */,
+				0F014A361D93108B00FA60FF /* close-light@3x.png in Resources */,
+				0F014A3C1D93108B00FA60FF /* play@3x.png in Resources */,
+				0F014A311D93108B00FA60FF /* close-dark.png in Resources */,
+				0F014A461D93108B00FA60FF /* json.png in Resources */,
+				0F014A341D93108B00FA60FF /* close-light.png in Resources */,
+				0F014A441D93108B00FA60FF /* couchbase-lite@2x.png in Resources */,
+				0F014A321D93108B00FA60FF /* close-dark@2x.png in Resources */,
+				0F014A451D93108B00FA60FF /* couchbase-lite@3x.png in Resources */,
+				0F014A301D93108B00FA60FF /* back@3x.png in Resources */,
+				0F014A3A1D93108B00FA60FF /* play.png in Resources */,
+				0F014A421D93108B00FA60FF /* hr@3x.png in Resources */,
+				0F014A381D93108B00FA60FF /* pause@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0F01490D1D93105F00FA60FF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0F0149001D93105E00FA60FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F014AA31D93108B00FA60FF /* VAKScreenInfo.m in Sources */,
+				0F014A9F1D93108B00FA60FF /* VAKProvBase.m in Sources */,
+				0F014A751D93108B00FA60FF /* VAKConsoleProvider.m in Sources */,
+				0F014A5D1D93108B00FA60FF /* VAKFileWriterBase.m in Sources */,
+				0F014A251D93108B00FA60FF /* NSDate+VAKISOFormat.m in Sources */,
+				0F014AC11D93108B00FA60FF /* VAKStateControllerSelection.m in Sources */,
+				0F014AA51D93108B00FA60FF /* VAKReplayViewController.m in Sources */,
+				0F014A5B1D93108B00FA60FF /* VAKAppSupportFileWriter.m in Sources */,
+				0F014A561D93108B00FA60FF /* VAKLibraryFilesystemHelper.m in Sources */,
+				0F014A631D93108B00FA60FF /* VAKDefaultFormatter.m in Sources */,
+				0F014A701D93108B00FA60FF /* VAKLogRegistrationBroker.m in Sources */,
+				0F014AB11D93108B00FA60FF /* VAKBaseReplayView.m in Sources */,
+				0F014A851D93108B00FA60FF /* VAKProvAssociation.m in Sources */,
+				0F014AA11D93108B00FA60FF /* VAKProvType.m in Sources */,
+				0F014A4A1D93108B00FA60FF /* VAKBackend.m in Sources */,
+				0F014ACD1D93108B00FA60FF /* VAKReplayManager.m in Sources */,
+				0F014A4D1D93108B00FA60FF /* VAKCustomBackend.m in Sources */,
+				0F014A271D93108B00FA60FF /* NSObject+VAKAspect.m in Sources */,
+				0F014A7F1D93108B00FA60FF /* VAKProvFactory.m in Sources */,
+				0F014A2B1D93108B00FA60FF /* NSString+ReadableLevel.m in Sources */,
+				0F014AAB1D93108B00FA60FF /* VAKSourceSelectionViewController.m in Sources */,
+				0F014AC31D93108B00FA60FF /* VAKStateCustomSelection.m in Sources */,
+				0F014AD01D93108B00FA60FF /* VAKTouchVisualizer.m in Sources */,
+				0F014A6C1D93108B00FA60FF /* VAKKeychain.m in Sources */,
+				0F014AD21D93108B00FA60FF /* VAKConstants.m in Sources */,
+				0F014ABF1D93108B00FA60FF /* VAKStateBaseSelection.m in Sources */,
+				0F014A8F1D93108B00FA60FF /* VAKProvRevision.m in Sources */,
+				0F014A681D93108B00FA60FF /* VAKVectorFormatter.m in Sources */,
+				0F014A291D93108B00FA60FF /* NSObject+VAKShortId.m in Sources */,
+				0F014AC91D93108B00FA60FF /* VAKStateSettingsSelection.m in Sources */,
+				0F014A721D93108B00FA60FF /* VAKNoopDispatcher.m in Sources */,
+				0F014A8D1D93108B00FA60FF /* VAKProvGeneration.m in Sources */,
+				0F014A581D93108B00FA60FF /* VAKAppSupportFileReader.m in Sources */,
+				0F014A811D93108B00FA60FF /* VAKProvSessionFactory.m in Sources */,
+				0F014A6E1D93108B00FA60FF /* VAKLogManager.m in Sources */,
+				0F014ACB1D93108B00FA60FF /* VAKStateTouchSelection.m in Sources */,
+				0F014AB31D93108B00FA60FF /* VAKReplayHeader.m in Sources */,
+				0F014A541D93108B00FA60FF /* VAKFilesystemHelperBase.m in Sources */,
+				0F014A1E1D93108B00FA60FF /* VAKTouchCollection.m in Sources */,
+				0F014A201D93108B00FA60FF /* VAKAbstractModel.m in Sources */,
+				0F014A831D93108B00FA60FF /* VAKProvStateFactory.m in Sources */,
+				0F014A931D93108B00FA60FF /* VAKProvActivity.m in Sources */,
+				0F014ABB1D93108B00FA60FF /* VAKReplayTouchTagHandler.m in Sources */,
+				0F014A6A1D93108B00FA60FF /* VAKAliasGenerator.m in Sources */,
+				0F014AB51D93108B00FA60FF /* VAKReplayPlayerView.m in Sources */,
+				0F014A9D1D93108B00FA60FF /* VAKProv.m in Sources */,
+				0F014A971D93108B00FA60FF /* VAKProvEntity.m in Sources */,
+				0F014A121D93108B00FA60FF /* Aspects.m in Sources */,
+				0F014A141D93108B00FA60FF /* VAKSession.m in Sources */,
+				0F014A611D93108B00FA60FF /* VAKLibraryFileWriter.m in Sources */,
+				0F014A8B1D93108B00FA60FF /* VAKProvDerivation.m in Sources */,
+				0F014AB81D93108B00FA60FF /* VAKDurationCalculator.m in Sources */,
+				0F014A4F1D93108B00FA60FF /* VAKDefaultBuilder.m in Sources */,
+				0F014AAF1D93108B00FA60FF /* VAKBaseSelectionViewController.m in Sources */,
+				0F014A891D93108B00FA60FF /* VAKProvDelegation.m in Sources */,
+				0F014A661D93108B00FA60FF /* VAKMatrixFormatter.m in Sources */,
+				0F014AA71D93108B00FA60FF /* VAKSessionSelectionViewController.m in Sources */,
+				0F014A161D93108B00FA60FF /* VAKState.m in Sources */,
+				0F014A1C1D93108B00FA60FF /* VAKTouch.m in Sources */,
+				0F014A181D93108B00FA60FF /* VAKStateFactory.m in Sources */,
+				0F014A911D93108B00FA60FF /* VAKProvUsage.m in Sources */,
+				0F014A951D93108B00FA60FF /* VAKProvDelegatingSoftwareAgent.m in Sources */,
+				0F014AAD1D93108B00FA60FF /* VAKSourceViewCell.m in Sources */,
+				0F014A771D93108B00FA60FF /* VAKNSLogProvider.m in Sources */,
+				0F014ABD1D93108B00FA60FF /* VAKReplayViewTagHandler.m in Sources */,
+				0F014AC71D93108B00FA60FF /* VAKStateKeyframeSelection.m in Sources */,
+				0F014A791D93108B00FA60FF /* VAKJsonFileProvider.m in Sources */,
+				0F014AC51D93108B00FA60FF /* VAKStateDoneSelection.m in Sources */,
+				0F014AA91D93108B00FA60FF /* VAKSessionViewCell.m in Sources */,
+				0F014A871D93108B00FA60FF /* VAKProvAttribution.m in Sources */,
+				0F014A2D1D93108B00FA60FF /* UITouch+VAKTransformable.m in Sources */,
+				0F014A9B1D93108B00FA60FF /* VAKProvKeys.m in Sources */,
+				0F014A991D93108B00FA60FF /* VAKProvWritingSoftwareAgent.m in Sources */,
+				0F014A521D93108B00FA60FF /* VAKAppSupportFilesystemHelper.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0F01490B1D93105F00FA60FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F014B1C1D9310CA00FA60FF /* VAKProvSpec.m in Sources */,
+				0F014B111D9310CA00FA60FF /* VAKProvAttributionSpec.m in Sources */,
+				0F014B281D9310CA00FA60FF /* VAKNoopDispatcherSpec.m in Sources */,
+				0F014B1B1D9310CA00FA60FF /* VAKProvBaseSpec.m in Sources */,
+				0F014B181D9310CA00FA60FF /* VAKProvDelegatingSoftwareAgentSpec.m in Sources */,
+				0F014B1E1D9310CA00FA60FF /* VAKBackendSpec.m in Sources */,
+				0F014B0B1D9310CA00FA60FF /* VAKStateSessionSpec.m in Sources */,
+				0F014B0A1D9310CA00FA60FF /* VAKStateFactorySpec.m in Sources */,
+				0F014B2A1D9310CA00FA60FF /* VAKNSLogProviderSpec.m in Sources */,
+				0F014B291D9310CA00FA60FF /* VAKConsoleProviderSpec.m in Sources */,
+				0F014B1F1D9310CA00FA60FF /* VAKCustomBackendSpec.m in Sources */,
+				0F014B2B1D9310CA00FA60FF /* VAKJsonFileProviderSpec.m in Sources */,
+				0F014B0D1D9310CA00FA60FF /* NSDate+VAKISOFormatSpec.m in Sources */,
+				0F014B151D9310CA00FA60FF /* VAKProvRevisionSpec.m in Sources */,
+				0F014B0F1D9310CA00FA60FF /* VAKStateIntegrationSpec.m in Sources */,
+				0F014B1D1D9310CA00FA60FF /* VAKProvTypeSpec.m in Sources */,
+				0F014B161D9310CA00FA60FF /* VAKProvUsageSpec.m in Sources */,
+				0F014B231D9310CA00FA60FF /* VAKFilesystemHelperSpec.m in Sources */,
+				0F014B271D9310CA00FA60FF /* VAKLogRegistrationBrokerSpec.m in Sources */,
+				0F014B101D9310CA00FA60FF /* VAKProvAssociationSpec.m in Sources */,
+				0F014B121D9310CA00FA60FF /* VAKProvDelegationSpec.m in Sources */,
+				0F014B1A1D9310CA00FA60FF /* VAKProvWritingSoftwareAgentSpec.m in Sources */,
+				0F014B0E1D9310CA00FA60FF /* NSString+ReadableLevelSpec.m in Sources */,
+				0F014B131D9310CA00FA60FF /* VAKProvDerivationSpec.m in Sources */,
+				0F014B091D9310CA00FA60FF /* VAKAbstractModelSpec.m in Sources */,
+				0F014B141D9310CA00FA60FF /* VAKProvGenerationSpec.m in Sources */,
+				0F014B221D9310CA00FA60FF /* VAKFileReaderSpec.m in Sources */,
+				0F014B251D9310CA00FA60FF /* VAKKeychainSpec.m in Sources */,
+				0F014B171D9310CA00FA60FF /* VAKProvActivitySpec.m in Sources */,
+				0F014B0C1D9310CA00FA60FF /* VAKStateSpec.m in Sources */,
+				0F014B241D9310CA00FA60FF /* VAKLibraryFileWriterSpec.m in Sources */,
+				0F014B261D9310CA00FA60FF /* VAKLogManagerSpec.m in Sources */,
+				0F014B191D9310CA00FA60FF /* VAKProvEntitySpec.m in Sources */,
+				0F014B201D9310CA00FA60FF /* VAKLoggerManagerBuilderSpec.m in Sources */,
+				0F014B211D9310CA00FA60FF /* VAKDurationCalculatorSpec.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0F0149121D93105F00FA60FF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0F0149041D93105E00FA60FF /* VisAnalyticsKit */;
+			targetProxy = 0F0149111D93105F00FA60FF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0F0149171D93105F00FA60FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		0F0149181D93105F00FA60FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		0F01491A1D93105F00FA60FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = VisAnalyticsKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = vak.VisAnalyticsKit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		0F01491B1D93105F00FA60FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = VisAnalyticsKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = vak.VisAnalyticsKit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		0F01491D1D93105F00FA60FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = VisAnalyticsKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = VAK.VisAnalyticsKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		0F01491E1D93105F00FA60FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = VisAnalyticsKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = VAK.VisAnalyticsKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0F0148FF1D93105E00FA60FF /* Build configuration list for PBXProject "VisAnalyticsKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0F0149171D93105F00FA60FF /* Debug */,
+				0F0149181D93105F00FA60FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0F0149191D93105F00FA60FF /* Build configuration list for PBXNativeTarget "VisAnalyticsKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0F01491A1D93105F00FA60FF /* Debug */,
+				0F01491B1D93105F00FA60FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0F01491C1D93105F00FA60FF /* Build configuration list for PBXNativeTarget "VisAnalyticsKitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0F01491D1D93105F00FA60FF /* Debug */,
+				0F01491E1D93105F00FA60FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0F0148FC1D93105E00FA60FF /* Project object */;
+}
