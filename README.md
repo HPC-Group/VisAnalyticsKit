@@ -1,13 +1,12 @@
 VisAnalyticsKit - The state logging framework
 
-An iOS framework to log state data in a backend agnostic fashion, that's also able to replay those logged states. 
+An iOS framework to log state data in a [backend](https://github.com/HPC-Group/VAKServer) agnostic fashion, that's also able to replay those logged states. 
 The framework is configurable - as such it comes with lots of [protocols](https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/ProgrammingWithObjectiveC/WorkingwithProtocols/WorkingwithProtocols.html) to be implemented - if one wishes to - so it does not strictly force consumers to use the internal implementations, 
 but it comes prepacked with some components: for example a VAKJSONProvider and a VAKConsoleProvider.
 Due to it's configurability the actual configuration might be a bit more complex.
 
 # Table of Contents
 
-0. [Backend](https://github.com/HPC-Group/VAKServer)
 1. [Platform](#platform)
 2. [Requirements](#requirements)
 3. [Installation](#installation)
