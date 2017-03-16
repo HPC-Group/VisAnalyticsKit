@@ -7,6 +7,7 @@ Due to it's configurability the actual configuration might be a bit more complex
 
 # Table of Contents
 
+0. [Back end](https://github.com/HPC-Group/VAKServer)
 1. [Platform](#platform)
 2. [Requirements](#requirements)
 3. [Installation](#installation)
